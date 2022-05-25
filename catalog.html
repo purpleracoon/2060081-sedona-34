@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+<header class="page-header">
+  <nav class="navigation">
+    <img class="header-logo" src="" alt="Логотип сайта Sedona">
+    <ul class="navigation-list">
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Главная</a>
+      </li>
+      <li class="navigation-item">
+      <a class="navigation-link" href="#">О Седоне</a>
+    </li>
+      <li class="navigation-item">
+        <a class="navigation-link navigation-link-current" href="index.html">Гостиницы</a>
+      </li>
+    </ul>
+    <ul class="navigation-list navigation-user">
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">
+          <span class="visually-hidden">Поиск</span></a>
+      </li>
+      <li class="navigation-item">
+      <a class="navigation-link" href="#">
+        <span class="visually-hidden">Выбранная гостиница</span></a>
+    </li> 
+  </ul>
+
+      <a class="header-link btn" href="#">Хочу сюда!</a> 
+    
+  </nav>
+</header>
+
+<main class="main-inner">
+
+    <section class="sedona-hotels">
+        <header class="inner-header">
+            <h1 class="inner-header-title">Гостиницы Седоны</h1>
+    <ul class="breadcrumbs">
+
+<li class="breadcrumbs-item">
+    <a class="breadcrumbs-link" href="index.html">
+        <span class="visually hidden">Домой</span></a> </li>
+
+<li class="breadcrumbs-item">
+    <a class="breadcrumbs-link"> Гостиницы </a>
+</li>
+    </ul>   
+        </header>
+    </section> 
+
+    <section class="catalog-hotels">
+
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+        
+        <fieldset class="catalog-filter-group">
+        
+        <legend class="catalog-filter-title">Инфраструктура</legend>
+        
+        <ul class="catalog-filter-list">
+        <li class="catalog-filter-item">
+        <label class="control" for="swimming-pool"></label>
+        <input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool" checked>Бассейн          
+        </li>
+        
+        <li class="catalog-filter-item">
+        <label class="control" for="parking"></label>
+        <input class="control-input" type="checkbox" name="parking" id="parking" checked>Парковка
+        </li> 
+        
+        <li class="catalog-filter-item">
+        <label class="control" for="wi-fi"></label>
+        <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">Wi-Fi</li>
+        </ul>
+        </fieldset> 
+        
+        <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья</legend>
+            <ul class="catalog-filter-list"></ul>
+            <li class="catalog-filter-item">
+            <label class="control" for="hotel"></label>
+            <input class="control-input" type="checkbox" name="hotel" id="hotel" checked>
+             Гостиница          
+            </li>
+            
+            <li class="catalog-filter-item">
+            <label class="control" for="motel"></label>
+            <input class="control-input" type="checkbox" name="motel" id="motel">
+            Мотель          
+            </li> 
+            
+            <li class="catalog-filter-item">
+            <label class="control" for="apartements"></label>
+            <input class="control-input" type="checkbox" name="apartements" id="apartements">
+            Апартаменты          
+            </li>
+            </ul>
+            </fieldset> 
+        </form>
+
+        <fieldset class="catalog-price-range">
+            <legend class="catalog-price-title">Стоимость, ₽:</legend>
+        
+            <label class="control" for="hotel"></label>
+            <input class="control-input" type="checkbox" name="hotel" id="hotel" checked>
+             Гостиница       
+        
+                  <button class="button subscribe-button" type="submit">Подписаться
+                </button>
+            
+            </section>
+        
+
+    </main>
+
+
+
+
+
