@@ -34,6 +34,30 @@ body {
   color: #242424;
 }
 
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.search-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .page-header {
   background-color: #ffffff;
   color: #242424;
@@ -50,6 +74,12 @@ body {
   text-transform: uppercase;
 }
 
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: #81B3D3;
+}
 .
 main.index {
   background-color: #ffffff;
@@ -84,6 +114,7 @@ main.index {
 .advantages-list {
   text-align: center;}
 
+
 .advantage-title {
   font-weight: 700;
   font-size: 24px;
@@ -91,4 +122,9 @@ main.index {
   text-transform: uppercase;
 }
 
+.item-city-background {
+  background-color: #ffffff;
+  color: #242424;
+  background-image: url("/images/index/background-advantages-list.png");
 
+}
