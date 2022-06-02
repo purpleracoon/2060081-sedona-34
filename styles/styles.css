@@ -32,8 +32,6 @@ body {
 
 /* Навигация / ссылки */
 .navigation-link {
-  font-size: 20px;
-  line-height: 26px;
   font-weight: 700;
   color: inherit;
   text-decoration: none;
@@ -136,19 +134,19 @@ background-color: rgba(131, 179, 211, 0.2);
 /* Футер */
 .page-footer {
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
   color: #000000;
   background-color: #ffffff;
+
 }
 
-.footer-contacts  {
+.contact-phone {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 400;
-  font-style: inherit;
+  font-style: normal;
 }
 
 .page-footer a {
@@ -156,7 +154,6 @@ background-color: rgba(131, 179, 211, 0.2);
 }
 
 .footer-link {
-
   text-decoration: none;
 
 }
@@ -199,6 +196,7 @@ background-color: rgba(131, 179, 211, 0.2);
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  background-color: #000000;;
   color: #FFFFFF;
   background-image: url("/images/catalog/product-form-background.jpg");
   background-size: cover;
