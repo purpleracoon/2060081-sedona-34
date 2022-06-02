@@ -16,7 +16,6 @@
   font-display: swap;
 }
 
-
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -81,7 +80,6 @@ body {
   text-align: center;
   background-color: #ffffff;
 }
-
 
 .advantage-title {
   font-size: 24px;
@@ -163,6 +161,7 @@ background-color: rgba(131, 179, 211, 0.2);
 
 }
 /* Кнопки главной */
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -179,7 +178,9 @@ background-color: rgba(131, 179, 211, 0.2);
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
+
   font-weight: 700;
+
 }
 
 .subscribe-button {
@@ -299,14 +300,11 @@ background-color: rgba(131, 179, 211, 0.2);
   .product-card-button-blue {
     font-family: inherit;
     background-color: #81B3D3;
-
-
     }
 
     .product-card-button-green {
       font-family: inherit;
       background-color: #7DB54F;
-
       }
 
     .product-card-button-grey {
@@ -342,5 +340,74 @@ background-color: rgba(131, 179, 211, 0.2);
 .select-label {
   font-size: 18x;
   line-height: 21px;
+}
 
+.page-header {
+  background-color: #ffffff;
+  color: #242424;
+}
+
+.navigation-link {
+
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: #81B3D3;
+}
+
+.main.index {
+  background-color: #ffffff;
+  color: #242424;
+}
+
+
+.sedona-presentation {
+  background-color: #ffffff;
+  color: #242424;
+  background-image: url("/images/index/index-background-welcome.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.sedona-slogan-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.sedona-slogan-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages-list {
+  text-align: center;}
+
+
+.advantage-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.item-city-background {
+  background-color: #ffffff;
+  color: #242424;
+  background-image: url("/images/index/background-advantages-list.png");
 }
