@@ -1,0 +1,359 @@
+@font-face {
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+:root  {
+  --color-first: #000000;
+  --color-second: #FFFFFF;
+  --color-third: #333333;;
+  --color-bg-first: #E5E5E5;
+  --color-bg-second: #FFFFFF;
+  --color-bg-third: #756157;
+  --color-bg-fourth: #F2F2F2;
+  --color-bg-fifth: #82B3D3;
+  --color-bg-sixth: #7DB54F;
+  --color-bg-seventh:#000000;
+
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: var(--color-bg-first);
+  color: var(--color-first);
+}
+
+.wrapper-main {
+  background-color: var(--color-bg-second);
+}
+
+.wrapper-inner {
+  background-color: var(--color-bg-second);
+}
+
+/* Шапка */
+.page-header {
+  background-color: var(--color-bg-second);
+
+}
+
+/* Навигация / ссылки */
+.navigation-link {
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Главная */
+
+/* убрала main-index (если цвет наследуется от боди, то незачем лишние строки) */
+
+/* Промо-блок */
+.sedona-presentation {
+  background-color: var(--color-bg-second);
+  color: var(--color-first);
+  background-image: url("/images/index/index-background-welcome.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.sedona-slogan-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--color-bg-second);
+}
+
+.sedona-slogan-subtitle {
+  text-align: center;
+  color: var(--color-third);
+  background-color: var(--color-bg-second);
+}
+
+.sedona-promo-information {
+  text-align: center;
+}
+
+/* Преимущества */
+.advantages-list {
+  text-align: center;
+
+}
+
+.advantage-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-details {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-third);
+}
+
+/*оставила advantages-main */
+.advantages-main {
+  color: var(--color-second);
+  font-size: 18px;
+  line-height: 21px;}
+
+
+.advantages-item-container-main {
+background-color: #82B3D3;
+color: var(--color-second);
+}
+
+.advantages-item-container-small-one {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-container-small-two {
+background-color: rgba(131, 179, 211, 0.2);
+}
+
+.product-search-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-search-subtitle {
+  color: var(--color-third);
+}
+
+
+.product-newsletters-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-newsletters-subtitle {
+  color: var(--color-third);
+}
+
+/* Футер */
+.page-footer {
+  color: var(--color-first);
+  background-color: var(--color-bg-second);
+
+}
+
+.contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.page-footer a {
+  color: var(--color-first);
+}
+
+.footer-link {
+  text-decoration: none;
+
+}
+/* Кнопки главной и каталога*/
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-second);
+  background-color: var(--color-bg-third);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.search-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: var(--color-bg-fifth);
+  border: none;
+}
+
+.submit-button {
+  background-color: var(--color-bg-fifth);
+}
+
+.reset-button {
+  text-transform: none;
+  background-color: transparent;
+  border: none;
+}
+
+.button-view {
+  background-color: var(--color-bg-second);
+  color: var(--color-first);
+  text-transform: none;
+  border: none;
+}
+
+.product-card-button-add {
+  background-color: var(--color-bg-fifth);
+  }
+
+  .product-card-button-selected {
+  background-color: var(--color-bg-sixth);
+    }
+
+  .product-card-button-rating {
+    background-color:  var(--color-bg-second);
+    color: var(--color-third);
+  }
+
+/* Страница каталога */
+
+/* Фильтры */
+.filter-background {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: var(--color-bg-seventh);
+  color: var(--color-second);
+  background-image: url("/images/catalog/product-form-background.jpg");
+  background-size: cover;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: var(--color-second);
+  }
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog-products-results {
+  background-color: var(--color-bg-second);
+}
+
+.products-catalog-filter {
+  color: var(--color-second);
+}
+
+/* Продуктовый каталог */
+
+
+.products-results-total {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-card {
+  background-color: var(--color-bg-second);
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--color-first);
+}
+
+.product-price-range {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-third);
+}
+
+.four-stars {
+  background-image: url("/images/catalog/star-rating.svg");
+  background-repeat: repeat-x;
+  width: 72px;
+}
+
+.three-stars {
+  background-image: url("/images/catalog/star-rating.svg");
+  background-repeat: repeat-x;
+  width: 56px;
+}
+
+.two-stars {
+  background-image: url("/images/catalog/star-rating.svg");
+  background-repeat: repeat-x;
+  width: 36px;
+}
+
+  /* Пагинация*/
+
+.pagination {
+  background-color: var(--color-bg-second);
+}
+
+.pagination-link {
+  color: var(--color-second);
+  background-color: var(--color-bg-fifth);
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  }
+
+.pagination-current {
+  color: var(--color-first);
+  background-color: var(--color-bg-second);
+}
+
+
+.select-label {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+
+
+
+
+
