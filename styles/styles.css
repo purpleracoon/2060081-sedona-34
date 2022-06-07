@@ -472,9 +472,14 @@ margin-right: 47px;
   text-transform: uppercase;
 }
 
+
+/*Можешь открыть этот участок кода в инстпекторе. У меня внутри карточек фото и текст прижаты к левому краю. Что делать?*/
 .product-card {
   background-color: var(--color-bg-second);
-  width: 340px;
+  min-height: 438px;
+  min-width: 340px;
+  padding: 0;
+  margin: 0;
 }
 
 .product-card-link {
