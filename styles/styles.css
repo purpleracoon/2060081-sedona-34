@@ -165,7 +165,7 @@ margin-right: 47px;
 
 .advantages-item-container-main {
   display: flex;
-  align-items: center;
+
   background-color: #82B3D3;
   color: var(--color-second);
   width: 1200px;
@@ -177,26 +177,35 @@ margin-right: 47px;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
   height: 387px;
+  display: flex;
+
+}
+
+.container-item {
+  display:block;
 }
 
 .advantages-item-container-small-two {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
   height: 387px;
+  display: flex;
+
+
 }
 
 .advantages-item-container-small-three {
   width: 400px;
   height: 387px;
+  display: flex;
+
 }
 
-.container-item {
-  display: block;
-}
+
 
 .advantages-item-city {
   display: flex;
-  align-items: center;
+
   padding: 0;
   margin: 0;
 }
@@ -418,7 +427,7 @@ margin-right: 47px;
 
 .products-results-total {
   display: flex;
-  width: 1057px;
+  width: 1056px;
   margin: 0 auto;
 }
 
@@ -435,6 +444,7 @@ margin-right: 47px;
 }
 
 .catalog-filter-box {
+  display: flex;
   padding: 0;
   margin: 0;
 }
@@ -444,9 +454,6 @@ margin-right: 47px;
   min-height: 48px;
 }
 
-.catalog-filter-container {
-  display: flex;
-}
 /* Продуктовый каталог */
 
 .product-list {

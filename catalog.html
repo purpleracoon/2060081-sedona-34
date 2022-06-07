@@ -112,7 +112,6 @@
                 <input class="price-range-table" type="text" value="0" id="price-min" name="price-min" placeholder="от">
                 <label class="price-range visually-hidden" for="price-max">До</label>
                 <input class="price-range-table" type="text" value="9000" id="price-max" name="price-max" placeholder="до">
-                <div class="hotel-price">
                 <label class="price-range visually-hidden" for="scale">Выбор цены ползунком</label>
                 <input class="price-range-scale" type="range" min="0" max="9000" id="scale" name="scale" step="10">
             </fieldset>
@@ -144,8 +143,8 @@
           </select>
 
 
-      <ul class="catalog-filter-box">
-        <div class="catalog-filter-container">
+
+          <ul class="catalog-filter-box">
           <li class="catalog-filter-link">
             <a class="button button-view" href="#">
               <span class="visually hidden">Мелкие</span></a>
@@ -158,9 +157,8 @@
             <a class="button button-view" href="#">
               <span class="visually hidden">Список</span></a>
           </li>
-        </div>
-      </div>
       </ul>
+    </div>
 
 
     <!--Каталог-->
@@ -304,15 +302,14 @@
 </ul>
 
 
-<div class="hotels-on-page">
-  <p class="select-label">Гостиниц на странице</p>
-<select class="hotels-number-page">
+  <label class="select-label" for="select">Гостиниц на странице</label>
+<select class="hotels-number-page" name="select" id="select">
   <option value="4">4</option>
   <option value="5">5</option>
   <option value="6">6</option>
 </select>
 </div>
-</div>
+
   <!--Подписка на рассылку-->
 
 <section class="product-newsletters-inner">
@@ -366,7 +363,6 @@
 </div>
 </footer>
 </div>
-
 </body>
 </html>
 
