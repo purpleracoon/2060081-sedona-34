@@ -71,7 +71,6 @@ body {
 }
 
 /* Навигация / ссылки */
-
 .navigation {
 display: flex;
 width: 1200px;
@@ -88,6 +87,7 @@ margin-right: 47px;
   padding: 0;
   width: 390px;
   margin-right: auto;
+  list-style-type: none;
 }
 
 .user-block {
@@ -95,6 +95,7 @@ margin-right: 47px;
   padding: 0;
   max-width: 264px;
   margin-right: 70px;
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -136,11 +137,11 @@ margin-right: 47px;
 
 /* Преимущества */
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   text-align: center;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantage-title {
@@ -166,7 +167,7 @@ margin-right: 47px;
 .advantages-item-container-main {
   display: flex;
 
-  background-color: #82B3D3;
+  background-color: var(--color-bg-fifth);
   color: var(--color-second);
   width: 1200px;
   padding: 0;
@@ -177,7 +178,7 @@ margin-right: 47px;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
   height: 387px;
-  display: flex;
+
 
 }
 
@@ -189,25 +190,21 @@ margin-right: 47px;
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
   height: 387px;
-  display: flex;
-
-
 }
 
 .advantages-item-container-small-three {
   width: 400px;
   height: 387px;
-  display: flex;
-
 }
-
-
 
 .advantages-item-city {
   display: flex;
-
   padding: 0;
   margin: 0;
+}
+
+.container-advantages-three-four-five {
+  display: flex;
 }
 
 .product-search {
@@ -257,12 +254,13 @@ margin-right: 47px;
 .page-footer-container {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 1060px;
+  padding: 40px 70px 30px;
+
 }
 
 .footer-social {
   width: 142px;
-  margin: 0 82px;
 }
 
 .footer-contacts {
@@ -271,11 +269,12 @@ margin-right: 47px;
 
 .html-academy-logo {
   width: 115px;
-  margin: 0 87px;
 }
+
 .footer-social-list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 .contact-phone {
   font-size: 40px;
@@ -339,15 +338,25 @@ margin-right: 47px;
 
 .product-card-button-add {
   background-color: var(--color-bg-fifth);
+  width: 140px;
+  height: 37px;
+  margin-bottom: 16px;
+
 }
 
 .product-card-button-selected {
   background-color: var(--color-bg-sixth);
+  width: 140px;
+  height: 37px;
+  margin-bottom: 16px;
 }
 
 .product-card-button-rating {
-  background-color:  var(--color-bg-second);
+  background-color:  var(--color-bg-fourth);
   color: var(--color-third);
+  width: 140px;
+  height: 37px;
+
 }
 
 /* Страница каталога */
@@ -384,7 +393,6 @@ margin-right: 47px;
   line-height: 26px;
   font-weight: 700;
 }
-
 
 .catalog-filter {
   display: flex;
@@ -457,12 +465,13 @@ margin-right: 47px;
 /* Продуктовый каталог */
 
 .product-list {
-  display: flex;
+  display: grid;
   width: 1056px;
-  flex-wrap: wrap;
+  margin: auto;
   padding: 0;
-  margin: 0 auto;
-  justify-content: space-between;
+  column-gap: 18px;
+  grid-template-columns: 340px 340px 340px;
+  list-style-type: none;
 }
 
 .products-results-total {
@@ -472,31 +481,96 @@ margin-right: 47px;
   text-transform: uppercase;
 }
 
-
-/*Можешь открыть этот участок кода в инстпекторе. У меня внутри карточек фото и текст прижаты к левому краю. Что делать?*/
 .product-card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-bg-second);
-  min-height: 438px;
-  min-width: 340px;
-  padding: 0;
-  margin: 0;
+  height: 438px;
+  width: 340px;
+
 }
 
 .product-card-link {
   text-decoration: none;
+  align-self: center;
+  width: 300px;
+  height: 211px;
+  margin-bottom: 16px;
+  margin-top: 20px;
 }
 
+
 .product-card-title {
+  display: flex;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: var(--color-first);
+  width: 300px;
+  height: 28px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  align-self: center;
+
 }
 
 .product-price-range {
   font-size: 24px;
   line-height: 28px;
   color: var(--color-third);
+  align-self: center;
+  margin-bottom: 16px;
+
+}
+
+.product-properties-price {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 37px;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.product-properties-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 37px;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.product-properties-rating {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 37px;
+  align-self: center;
+  margin-bottom: 20px;
+
+}
+
+.product-type {
+  width: 140px;
+  height: 21px;
+}
+
+.product-price {
+width: 140px;
+height: 21px;
+
+}
+
+.button-more {
+width: 140px;
+height: 37px;
+margin-bottom: 16px;
+}
+
+.four {
+width: 140px;
+height: 37px;
 }
 
 .price-range-table {
@@ -523,9 +597,6 @@ margin-right: 47px;
 }
 
   /* Пагинация*/
-
-
-
 .pagination-container-big {
   display: flex;
   justify-content: space-between;
