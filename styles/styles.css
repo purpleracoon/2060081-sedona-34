@@ -138,7 +138,9 @@ margin-right: 47px;
 /* Преимущества */
 .advantages-list {
   display: grid;
+  grid-template-columns: 400px, 400px, 400px;
   text-align: center;
+  width: 1200px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -165,25 +167,23 @@ margin-right: 47px;
 }
 
 .advantages-item-container-main {
-  display: flex;
-
   background-color: var(--color-bg-fifth);
   color: var(--color-second);
-  width: 1200px;
   padding: 0;
   margin: 0;
+  height: 384px;
+  display: flex;
+  width: 1200px;
 }
 
 .advantages-item-container-small-one {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
   height: 387px;
-
-
 }
 
 .container-item {
-  display:block;
+  display: block;
 }
 
 .advantages-item-container-small-two {
@@ -197,14 +197,16 @@ margin-right: 47px;
   height: 387px;
 }
 
-.advantages-item-city {
-  display: flex;
+.advantages-item-container-city {
   padding: 0;
   margin: 0;
+  display: flex;
+  width: 1200px;
 }
 
-.container-advantages-three-four-five {
+.advantages-item-container-canyon {
   display: flex;
+  width: 1200px;
 }
 
 .product-search {
@@ -255,20 +257,24 @@ margin-right: 47px;
   display: flex;
   justify-content: space-between;
   width: 1060px;
+  margin: auto;
   padding: 40px 70px 30px;
 
 }
 
 .footer-social {
   width: 142px;
+  align-self: center;
 }
 
 .footer-contacts {
   width: 331px;
+  align-self: center;
 }
 
 .html-academy-logo {
   width: 115px;
+  align-self: center;
 }
 
 .footer-social-list {
