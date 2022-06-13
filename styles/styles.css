@@ -49,11 +49,24 @@ body {
   color: var(--color-first);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0 );
+  overflow: hidden;
+}
 .main-container  {
   flex-grow: 1;
 }
 
 .wrapper-main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   background-color: var(--color-bg-second);
   width: 1200px;
   margin: 0 auto;
@@ -73,47 +86,95 @@ body {
 /* Навигация / ссылки */
 .navigation {
 display: flex;
-width: 1200px;
-}
+width: 1056px;
+margin: auto;
 
+}
+.header-logo {
+  display: block;
+  position: relative;
+  z-index: 1;
+
+}
 .page-logo {
 display: block;
-margin-left: 70px;
 margin-right: 47px;
+width: 139px;
+margin-bottom: -5px;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 390px;
-  margin-right: auto;
   list-style-type: none;
 }
 
 .user-block {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 264px;
+  margin-left: auto;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  max-width: 264px;
-  margin-right: 70px;
+  margin: 0;
   list-style-type: none;
 }
 
+.button-container {
+  margin-left: auto;
+}
+
+.header-link {
+  display: block;
+  margin: 14px 0;
+  padding: 9px 15px 8px 15px;
+}
+
 .navigation-link {
+  display: block;
   font-weight: 700;
   color: inherit;
   text-decoration: none;
-  text-transform: uppercase;
+  padding: 20px 17px;
 }
 
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 18px;
+
+}
+.link-container .navigation-link {
+  display: block;
+}
 /* Главная */
 
 /* Промо-блок */
+
+
+.sedona-promo-information {
+  padding-top: 51px;
+  padding-bottom: 81px;
+
+}
 .sedona-presentation {
   background-color: var(--color-bg-second);
   color: var(--color-first);
   background-image: url("/images/index/index-background-welcome.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sedona-slogan-title {
@@ -123,12 +184,18 @@ margin-right: 47px;
   text-transform: uppercase;
   text-align: center;
   background-color: var(--color-bg-second);
+  margin-top: 63px;
+  margin-bottom: 31px;
+  max-width: 620px;
+
 }
 
 .sedona-slogan-subtitle {
   text-align: center;
   color: var(--color-third);
   background-color: var(--color-bg-second);
+  margin-bottom: 90px;
+  max-width: 654px;
 }
 
 .sedona-promo-information {
@@ -137,8 +204,8 @@ margin-right: 47px;
 
 /* Преимущества */
 .advantages-list {
-  display: grid;
-  grid-template-columns: 400px, 400px, 400px;
+  display: flex;
+ flex-wrap: wrap;
   text-align: center;
   width: 1200px;
   margin: 0;
@@ -184,7 +251,10 @@ margin-right: 47px;
 
 .container-item {
   display: block;
+  padding: 92px 85px;
 }
+
+
 
 .advantages-item-container-small-two {
   background-color: rgba(131, 179, 211, 0.2);
@@ -202,6 +272,7 @@ margin-right: 47px;
   margin: 0;
   display: flex;
   width: 1200px;
+  list-style-type: none;
 }
 
 .advantages-item-container-canyon {
@@ -211,7 +282,9 @@ margin-right: 47px;
 
 .product-search {
   text-align: center;
-  height: 417px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-search-title {
@@ -219,21 +292,24 @@ margin-right: 47px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  max-width: 297px;
+  margin-top: 91px;
+  margin-bottom: 21px;
 }
 
 .product-search-subtitle {
   color: var(--color-third);
+  margin-top: 0;
+  margin-bottom: 56px;
+  max-width: 592px;
 }
 
 .product-newsletters {
   background-image: url("/images/index/background-field-subscribe.jpg");
   text-align: center;
-  height: 411px;
-}
-
-.product-newsletters-inner {
-  text-align: center;
-  height: 411px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-newsletters-title{
@@ -241,11 +317,32 @@ margin-right: 47px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--color-second);
+  margin-top: 94px;
+  margin-bottom: 29px;
 }
 
 .product-newsletters-subtitle {
   color: var(--color-third);
+  color: var(--color-second);
+  margin-bottom: 46px;
 }
+
+.subscribtion {
+  margin-bottom: 94px;
+}
+
+.subscribtion-field {
+  font-size: 18px;
+  line-height: 21px;
+  width: 600px;
+  padding-left: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*почему поле ввода выглядит по высоте больше, чем кнопка?*/
+}
+
+
 
 /* Футер */
 .page-footer {
@@ -259,12 +356,17 @@ margin-right: 47px;
   width: 1060px;
   margin: auto;
   padding: 40px 70px 30px;
-
 }
 
 .footer-social {
   width: 142px;
   align-self: center;
+  padding: 5px;
+}
+
+.footer-social-link {
+  width: 47px;
+  height: 40px;
 }
 
 .footer-contacts {
@@ -278,9 +380,12 @@ margin-right: 47px;
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style-type: none;
+
 }
 .contact-phone {
   font-size: 40px;
@@ -315,13 +420,21 @@ margin-right: 47px;
 .search-button {
   font-size: 20px;
   line-height: 36px;
+  margin-bottom: 93px;
+  margin-top: 0;
+  width: 574px;
+  padding: 12px 15px;
 }
 
 .subscribe-button {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   background-color: var(--color-bg-fifth);
   border: none;
+  padding: 12px 15px;
+  width: 200px;
+
 }
 
 .submit-button {
