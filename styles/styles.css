@@ -34,10 +34,7 @@ html {
 }
 
 body {
-  margin-left:  40px;
-  margin-right:  40px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -68,6 +65,8 @@ body {
   background-color: var(--color-bg-second);
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 0px 15px;
+
 }
 
 .wrapper-inner {
@@ -77,6 +76,7 @@ body {
   background-color: var(--color-bg-second);
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 0px 15px;
 }
 
 /* Шапка */
@@ -206,8 +206,11 @@ margin-bottom: -5px;
 /* Преимущества */
 .advantages-list {
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
   width: 1200px;
   margin: 0;
   padding: 0;
@@ -219,13 +222,29 @@ margin-bottom: -5px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.advantage-title-small-one {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.advantage-number {
+  margin-bottom: 30px;
 }
 
 .advantages-details {
   font-size: 18px;
   line-height: 21px;
   color: var(--color-third);
+  margin: 0;
+  text-align: center;
 }
 
 .advantages-main {
@@ -246,15 +265,40 @@ margin-bottom: -5px;
 
 .advantages-item-container-small-one {
   background: rgba(131, 179, 211, 0.12);
+
   width: 400px;
   height: 387px;
 }
 
 .container-item {
-  display: block;
   padding: 92px 85px;
+  max-width: 230px;
 }
 
+.container-item-home {
+  padding: 180px 85px 80px;
+  max-width: 230px;
+  background-image: url("/images/index/advantage-icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 160px 70px;
+}
+
+.container-item-food {
+  padding: 180px 85px 80px;
+  max-width: 230px;
+  background-image: url("/images/index/advantage-icon-food.svg");
+  background-repeat: no-repeat;
+  background-position: 160px 70px;
+}
+
+
+.container-item-souvenirs {
+  padding: 180px 85px 80px;
+  max-width: 230px;
+  background-image: url("/images/index/advantage-icon-souvenirs.svg");
+  background-repeat: no-repeat;
+  background-position: 160px 70px;
+}
 
 .advantages-item-container-small-two {
   background-color: rgba(131, 179, 211, 0.2);
@@ -330,7 +374,10 @@ margin-bottom: -5px;
 
 .subscribtion {
   margin-bottom: 94px;
+  display: grid;
+  grid-template-columns: 600px 200px;
 }
+
 
 .subscribtion-field {
   font-size: 18px;
@@ -339,7 +386,8 @@ margin-bottom: -5px;
   padding-left: 22px;
   padding-top: 20px;
   padding-bottom: 20px;
-  /*почему поле ввода выглядит по высоте больше, чем кнопка?*/
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .product-newsletters-inner {
@@ -457,6 +505,8 @@ margin-bottom: -5px;
   border: none;
   padding: 12px 15px;
   width: 200px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 
 }
 
@@ -652,11 +702,10 @@ margin-bottom: -5px;
 
 .product-list {
   display: grid;
-  width: 1056px;
   margin: auto;
   padding: 0;
   column-gap: 18px;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 340px );
   list-style-type: none;
 }
 
