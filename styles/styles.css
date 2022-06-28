@@ -1434,21 +1434,87 @@ border: 2px solid var(--color-second);
 .control {
   position: relative;
   display: block;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .control-mark {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid transparent;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-bg-second);
+  border-radius: 4px;
 }
 
-.control-label
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark {
+background-color: rgba(255, 255, 255, 0.6);
+outline: 3px solid var(--color-bg-tenth);
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 3px solid var(--color-bg-tenth);
+  }
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/catalog/checkbox-control-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
 
 
+/* радио */
+
+.control-radio {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-bg-second);
+  border-radius: 4px;
+}
+
+
+.control-input-radio[type="radio"] + .control-mark-radio {
+  border-radius: 50%;
+}
+
+.control-input-radio[type="radio"]:checked + .control-mark-radio {
+  background-image: url("../images/catalog/radio-control-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.control-radio:hover .control-mark-radio {
+  background-color: var(--color-bg-second);
+}
+
+.control-radio:focus .control-mark-radio {
+  background-color: var(--color-bg-second);
+outline: 3px solid var(--color-bg-tenth);
+}
+
+.control-radio:active .control-mark-radio {
+  background-color: var(--color-bg-second);
+  }
+
+/* цены */
 .catalog-filter-group-hotel {
   width: 146px;
   padding: 0;
@@ -1472,6 +1538,7 @@ border: 2px solid var(--color-second);
 
 }
 
+/* результаты подбора */
 .catalog-products-results {
   padding: 55px 72px;
   background-color: var(--color-bg-second);
