@@ -226,8 +226,18 @@ body {
   background-image: url("/images/index/index-background-welcome.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-
+  position: relative;
 }
+
+.sedona-presentation:after {
+  position: absolute;
+  width: 1200px;
+  height: 57px;
+  bottom: 5px;
+  background-image: url("../images/catalog/decoration-line-sedona.svg");
+  content: "";
+}
+
 
 .promo-text {
   display: flex;
@@ -413,7 +423,7 @@ body {
 }
 
 .product-newsletters {
-  background-image: url("/images/index/background-field-subscribe.jpg");
+  background-image: url("../images/index/background-field-subscribe.jpg");
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -801,7 +811,7 @@ fill: rgba(0, 0, 0, 0.2);
 }
 
 .modal-container-close {
-  /*display: none;*/
+  display: block;
 }
 
 .minus-icon-kids {
@@ -1189,7 +1199,7 @@ modal-button:active {
   line-height: 21px;
   background-color: var(--color-bg-seventh);
   color: var(--color-second);
-  background-image: url("/images/catalog/product-form-background.jpg");
+  background-image: url("../images/catalog/product-form-background.jpg");
   background-size: cover;
   padding: 35px 70px 70px 70px;
 }
@@ -1725,19 +1735,19 @@ outline: 3px solid var(--color-bg-tenth);
 
 
 .four-stars {
-  background-image: url("/images/catalog/star-rating.svg");
+  background-image: url("..images/catalog/star-rating.svg");
   background-repeat: repeat-x;
   width: 72px;
 }
 
 .three-stars {
-  background-image: url("/images/catalog/star-rating.svg");
+  background-image: url("../images/catalog/star-rating.svg");
   background-repeat: repeat-x;
   width: 56px;
 }
 
 .two-stars {
-  background-image: url("/images/catalog/star-rating.svg");
+  background-image: url("../images/catalog/star-rating.svg");
   background-repeat: repeat-x;
   width: 36px;
 }
