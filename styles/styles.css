@@ -14,7 +14,6 @@
   font-display: swap;
 }
 
-
 :root {
   --color-first: #000000;
   --color-second: #FFFFFF;
@@ -27,6 +26,7 @@
   --color-ninth: #83B3D3;
   --color-tenth: #3F5E72;
   --color-eleventh: #82B3D3;
+  --color-twelfth: #FF5757;
   --color-bg-first: #E5E5E5;
   --color-bg-second: #FFFFFF;
   --color-bg-third: #756157;
@@ -37,6 +37,7 @@
   --color-bg-eighth: #68A2CA;
   --color-bg-ninth: #615048;
   --color-bg-tenth: #83B3D3;
+  --color-bg-thirteenth: #E6E6E6;
 }
 
 html {
@@ -66,7 +67,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 .wrapper-main {
   display: flex;
@@ -190,6 +190,7 @@ body {
   display: block;
   margin: 14px 0;
   padding: 9px 15px;
+  min-width: 160px;
 }
 
 .navigation-link {
@@ -277,7 +278,6 @@ body {
   margin-bottom: 30px;
 }
 
-
 .advantage-number {
   margin-bottom: 30px;
 }
@@ -331,7 +331,6 @@ body {
   width: 180px;
   margin: 0 auto 30px auto;
 }
-
 
 .container-item {
   padding: 92px 85px;
@@ -439,7 +438,6 @@ body {
   grid-template-columns: 600px 200px;
 }
 
-
 .subscribtion-field {
   font-size: 18px;
   line-height: 21px;
@@ -526,7 +524,6 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -558,7 +555,6 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-
 .contact-phone {
   font-size: 40px;
   line-height: 40px;
@@ -580,13 +576,219 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-
 .page-footer a {
   color: var(--color-first);
 }
 
 .footer-link {
   text-decoration: none;
+}
+/*модальное окно */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px;
+  background-color: var(--color-bg-second);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-auth {
+  width: 575px;
+
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 55px;
+  right: 75px;
+  width: 53px;
+  height: 53px;
+  border:  3px solid transparent;
+  border-radius: 50%;
+  background-color: var(--color-bg-fourth);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close-button:hover {
+  background-color: var(--color-bg-thirteenth);
+}
+
+.modal-close-button:focus {
+  background-color: var(--color-bg-thirteenth);
+  border: 3px solid var(--color-bg-tenth);
+}
+
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 63px;
+  font-family: "PT Sans";
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--color-first);
+  text-transform: uppercase;
+}
+
+.modal-form {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.modal-form-list {
+  padding:0;
+margin:0;
+list-style-type: none;
+}
+
+.input-date {
+  display: flex;
+
+}
+
+.auth-form-field {
+  background-color: var(--color-bg-fourth);
+  border-radius: 4px;
+  border: none;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--color-first);
+  padding: 15px 19px;
+  width: 420px;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.modal-label {
+  font-family: "PT Sans";
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--color-first);
+}
+
+.modal-input-comment {
+  margin: 0;
+  color: var(--color-third);
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+margin-bottom: 11px;
+
+}
+
+.comment-input-error {
+  color: var(--color-twelfth);
+}
+
+.input-field-date {
+  background-image: url(../images/modal/modal-calender-icon.svg);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}
+
+.input-number-adults {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 288px;
+}
+
+.minus-icon-adult {
+position: absolute;
+top: 25px;
+left: 160px;
+}
+
+.input-number-kids {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 288px;
+}
+
+.plus-icon-adult {
+position: absolute;
+}
+.auth-form-field-small {
+  width: 133px;
+  margin-left: auto;
+ text-align: center;
+}
+
+
+
+.modal-number-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-container-close {
+  /*display: none;*/
+}
+
+
+/* тултип */
+
+.tooltip {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-ninth);
+  display: block;
+}
+
+.tooltip-text {
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: var(--color-second);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 8px;
+  display: block;
+  width: 256px;
+  box-sizing: border-box;
 }
 
 
@@ -612,7 +814,6 @@ body {
   color: var(--color-second);
   background-color: var(--color-bg-ninth);
 }
-
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
@@ -653,12 +854,10 @@ body {
   background-color: var(--color-bg-eighth);
 }
 
-
 .subscribe-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: var(--color-bg-fifth);
 }
-
 
 .subscribe-button:disabled {
   color: var(--color-second);
@@ -670,7 +869,6 @@ body {
   color: var(--color-second);
   background-color: #6C9E42;
 }
-
 
 .product-card-button-selected:active {
   color: rgba(255, 255, 255, 0.3);
@@ -696,7 +894,6 @@ body {
   color: var(--color-second);
   background-color: var(--color-bg-eighth);
 }
-
 
 .submit-button:active {
   color: rgba(255, 255, 255, 0.3);
@@ -768,12 +965,10 @@ body {
   background-color: var(--color-bg-eighth);
 }
 
-
 .product-card-button-add:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: var(--color-bg-fifth);
 }
-
 
 .product-card-button-add:disabled {
   color: #FFFFFF;
@@ -785,7 +980,6 @@ body {
   color: #FFFFFF;
   background-color: #6C9E42;
 }
-
 
 .product-card-button-selected:active {
   color: rgba(255, 255, 255, 0.3);
@@ -829,9 +1023,7 @@ body {
   color: var(--color-third);
 }
 
-
 /* Страница каталога */
-
 
 /* Фильтры */
 .filter-background {
@@ -1055,7 +1247,6 @@ body {
   outline: 2px solid var(--color-first);
 }
 
-
 .catalog-filter-link:last-child {
   margin-right: 0;
 }
@@ -1259,3 +1450,4 @@ body {
 .hotels-number-page:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
+
