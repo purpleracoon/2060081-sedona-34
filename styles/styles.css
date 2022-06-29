@@ -471,12 +471,12 @@ body {
 }
 
 .subscribtion-field:hover {
-  background-color: var(--color-bg-thirteenth)
+  background-color: var(--color-bg-thirteenth);
 }
 
 .subscribtion-field:focus {
   border: 3px solid var(--color-ninth);
-  background-color: var(--color-bg-thirteenth)
+  background-color: var(--color-bg-thirteenth);
 }
 
 .subscribtion-field:not(:placeholder-shown) {
@@ -501,7 +501,7 @@ body {
   color: var(--color-second);
   margin-top: 94px;
   margin-bottom: 29px;
-  color: black;
+  color: var(--color-first);
 }
 
 .product-newsletters-subtitle-inner {
