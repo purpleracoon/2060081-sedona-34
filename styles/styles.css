@@ -481,7 +481,8 @@ body {
 
 .subscribtion-field:not(:placeholder-shown) {
   border: 2px solid var(--color-first);
-  background-color: var(--color-bg-second)
+  background-color: var(--color-bg-second);
+  color: var(--color-first);
 }
 
 
@@ -707,7 +708,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: var(--color-first);
+  color: rgba(0, 0, 0, 0.6);
   padding: 15px 19px;
   width: 420px;
   margin-left: auto;
@@ -772,6 +773,7 @@ body {
 }
 
 .input-field-date:active {
+  color: var(--color-first);
   background-color: var(--color-bg-second);
   outline: 3px solid var(--color-first);
 }
