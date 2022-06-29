@@ -1772,7 +1772,7 @@ body {
 
 
 .four-stars {
-  background-image: url("..images/catalog/star-rating.svg");
+  background-image: url("../images/catalog/star-rating.svg");
   background-repeat: repeat-x;
   width: 72px;
 }
