@@ -650,7 +650,6 @@ body {
 
 .modal-auth {
   width: 575px;
-
 }
 
 .modal-close-button {
@@ -678,7 +677,6 @@ body {
   border: 3px solid var(--color-bg-tenth);
 }
 
-
 .modal-title {
   margin: 0;
   margin-bottom: 63px;
@@ -694,7 +692,6 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-
 }
 
 .modal-form-list {
@@ -703,41 +700,49 @@ body {
   list-style-type: none;
 }
 
+
+.modal-form-item {
+  padding: 0;
+  margin: 0;
+}
+
 .input-date {
   display: flex;
+  width: 575px;
+  justify-content: space-between;
 
 }
 
-.auth-form-field {
+.input-field-date {
   background-color: var(--color-bg-fourth);
   border-radius: 4px;
   border: none;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
   padding: 15px 19px;
   width: 420px;
-  margin-left: auto;
   box-sizing: border-box;
 }
 
+
 .modal-label {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   color: var(--color-first);
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .modal-label-icon {
   position: relative;
   padding-right: 25px;
 }
-
 
 .modal-input-comment {
   margin: 0;
@@ -748,9 +753,9 @@ body {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 11px;
-  display: inline-block;
   min-width: 420px;
-  margin-left: 175px;
+  position: relative;
+  left: 157px;
 }
 
 .comment-input-error {
@@ -780,51 +785,46 @@ body {
   outline: 3px solid var(--color-ninth);
 }
 
-.input-field-date:active {
+.input-field-date:not(:placeholder-shown) {
   color: var(--color-first);
   background-color: var(--color-bg-second);
   outline: 3px solid var(--color-first);
 }
 
 .input-number-adults {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 288px;
-  margin-right: 56px;
+  margin-right: 55px;
 }
 
-.minus-icon-adult {
+.minus-icon {
   position: absolute;
-  top: 25px;
-  left: 170px;
   width: 13px;
   height: 1px;
   fill: rgba(0, 0, 0, 0.3);
+
 }
 
-.minus-icon-adult:hover {
+.before-input:hover .minus-icon {
   fill: var(--color-first);
 }
-
-.minus-icon-adult:focus {
+.before-input:focus .minus-icon {
   fill: var(--color-first);
   outline: 3px solid var(--color-ninth);
 }
 
-.minus-icon-adult:active {
+.before-input:active .minus-icon{
   fill: rgba(0, 0, 0, 0.2);
 }
 
 .input-number-kids {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 230px;
 }
 
-.plus-icon-adult {
-  position: absolute;
+.plus-icon {
   top: 20px;
   left: 260px;
   width: 13px;
@@ -832,24 +832,33 @@ body {
   fill: rgba(0, 0, 0, 0.3);
 }
 
-.plus-icon-adult:hover {
+.after-input:hover .plus-icon {
   fill: var(--color-first);
 }
 
-.plus-icon-adult:focus {
+.after-input:focus .plus-icon {
   fill: var(--color-first);
   outline: 3px solid var(--color-ninth);
 }
 
-.plus-icon-adult:active {
+.after-input:active .plus-icon {
   fill: rgba(0, 0, 0, 0.2);
 }
 
-.auth-form-field-small {
-  width: 133px;
-  margin-left: auto;
+.auth-form-field {
+  width: 31px;
   text-align: center;
+  border: none;
+  background-color: var(--color-bg-fourth);
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--color-first);
+  box-sizing: border-box;
 }
+
+
 
 .modal-number-wrapper {
   display: flex;
@@ -857,8 +866,32 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: block;
+
 }
+
+.before-input {
+  width: 51px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.after-input {
+  width: 51px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 4px 4px 0;
+}
+
 
 .minus-icon-kids {
   position: absolute;

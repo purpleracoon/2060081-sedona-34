@@ -263,6 +263,7 @@
           </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
+
         <section class="modal-content">
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="modal-form">
@@ -270,17 +271,18 @@
               <ul class="modal-form-list">
                 <li class="modal-form-item">
                   <div class="input-date">
-                    <label class="modal-label" for="date"> Дата заезда: </label>
-                    <input class="auth-form-field input-field-date" type="text" name="date" id="date"
-                      value="27 апреля 2020">
+                    <label class="modal-label" for="date">Дата заезда: </label>
+                    <input class="input-field-date" type="text" name="date" id="date"
+                      placeholder="27 апреля 2020">
                   </div>
                   <p class="modal-input-comment comment-input-error">Мы не можем отправить вас в прошлое.</p>
                 </li>
                 <li class="modal-form-item">
+
                   <div class="input-date">
                     <label class="modal-label" for="date"> Дата выезда: </label>
-                    <input class="auth-form-field input-field-date" type="text" name="date" id="date"
-                      value="21 сентября 2021">
+                    <input class="input-field-date" type="text" name="date" id="date"
+                    placeholder="21 сентября 2021">
                   </div>
                   <p class="modal-input-comment">На эти даты есть свободные номера. Пока есть.</p>
                 </li>
@@ -289,16 +291,20 @@
                   <li class="modal-form-item">
                     <div class="input-number-adults">
                       <label class="modal-label" for="number"> Врослые: </label>
-                      <input class="auth-form-field auth-form-field-small" type="text" name="number" id="number"
-                        value="2">
-                      <svg class="minus-icon-adult" aria-hidden="true" focusable="false" width="13" height="1"
+                      <button class="before-input" type="button">
+                        <svg class="minus-icon" aria-hidden="true" focusable="false" width="13" height="1"
                         viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0v1h13V0H0Z" />
                       </svg>
-                      <svg class="plus-icon-adult" aria-hidden="true" focusable="false" width="13" height="13"
+                    </button>
+                      <input class="auth-form-field" type="text" name="number" id="number"
+                        value="2">
+                      <button class="after-input" type="button">
+                      <svg class="plus-icon" aria-hidden="true" focusable="false" width="13" height="13"
                         viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
                       </svg>
+                    </button>
                     </div>
                   </li>
                   <li class="modal-form-item">
@@ -324,16 +330,21 @@
                             6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                         </span>
                       </span>
-                      <input class="auth-form-field auth-form-field-small" type="text" name="number" id="number"
-                        value="2">
-                      <svg class="minus-icon-kids" aria-hidden="true" focusable="false" width="13" height="1"
+
+                      <button class="before-input" type="button">
+                        <svg class="minus-icon" aria-hidden="true" focusable="false" width="13" height="1"
                         viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0v1h13V0H0Z" />
                       </svg>
-                      <svg class="plus-icon-kids" aria-hidden="true" focusable="false" width="13" height="13"
+                    </button>
+                      <input class="auth-form-field" type="text" name="number" id="number"
+                        value="1">
+                        <button class="after-input" type="button">
+                      <svg class="plus-icon" aria-hidden="true" focusable="false" width="13" height="13"
                         viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
                       </svg>
+                    </button>
                     </div>
                   </li>
                 </div>
