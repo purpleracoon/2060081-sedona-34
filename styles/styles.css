@@ -113,7 +113,7 @@ body {
 
 .page-logo {
   display: block;
-  margin-right: 47px;
+  margin-right: 26px;
   width: 139px;
   margin-bottom: -5px;
 }
@@ -128,6 +128,16 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
+  font-family: "PT Sans";
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-first);
+  background-color: var(--color-bg-second);
+  text-decoration: none;
   position: relative;
 }
 
@@ -135,7 +145,7 @@ body {
   position: absolute;
   right: 10px;
   bottom: 0;
-  left: 10px;
+  left: 20px;
   height: 2px;
   background-color: var(--color-fourth);
   content: "";
@@ -196,13 +206,6 @@ body {
   min-width: 160px;
 }
 
-.navigation-link {
-  display: block;
-  font-weight: 700;
-  color: inherit;
-  text-decoration: none;
-  padding: 20px 17px;
-}
 
 .navigation-user .navigation-link {
   width: 18px;
@@ -233,8 +236,9 @@ body {
   position: absolute;
   width: 1200px;
   height: 57px;
-  bottom: 5px;
+  bottom: 4px;
   background-image: url("../images/catalog/decoration-line-sedona.svg");
+  background-repeat: repeat;
   content: "";
 }
 
@@ -246,18 +250,20 @@ body {
 }
 
 .sedona-slogan-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   background-color: var(--color-bg-second);
-  margin-top: 63px;
-  margin-bottom: 31px;
+  margin-top: 59px;
+  margin-bottom: 27px;
   max-width: 620px;
 }
 
 .sedona-slogan-subtitle {
+  margin: 0;
   color: var(--color-third);
   background-color: var(--color-bg-second);
   margin-bottom: 90px;
@@ -291,8 +297,8 @@ body {
   margin-bottom: 30px;
 }
 
-.advantage-number {
-  margin-bottom: 30px;
+.advantages-details {
+  margin:0;
 }
 
 .advantages-details-hotel {
@@ -307,11 +313,9 @@ body {
   margin-bottom: 30px;
 }
 
-.advantages-details {
-  margin: 0;
-}
 
 .advantages-main {
+  margin: 0;
   color: var(--color-second);
   font-size: 18px;
   line-height: 21px;
@@ -351,27 +355,27 @@ body {
 }
 
 .container-item-home {
-  padding: 180px 85px 81px;
+  padding: 184px 85px 81px;
   max-width: 230px;
   background-image: url("../images/index/advantage-icon-home.svg");
   background-repeat: no-repeat;
-  background-position: 160px 70px;
+  background-position: 160px 82px;
 }
 
 .container-item-food {
-  padding: 180px 85px 81px;
+  padding: 184px 85px 81px;
   max-width: 230px;
   background-image: url("../images/index/advantage-icon-food.svg");
   background-repeat: no-repeat;
-  background-position: 160px 70px;
+  background-position: 160px 82px;
 }
 
 .container-item-souvenirs {
-  padding: 180px 85px 80px;
+  padding: 184px 85px 81px;
   max-width: 230px;
   background-image: url("../images/index/advantage-icon-souvenirs.svg");
   background-repeat: no-repeat;
-  background-position: 160px 70px;
+  background-position: 160px 82px;
 }
 
 .advantages-item-container-small-two {
@@ -389,6 +393,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   list-style-type: none;
 }
@@ -412,7 +417,7 @@ body {
   text-transform: uppercase;
   max-width: 297px;
   margin-top: 91px;
-  margin-bottom: 21px;
+  margin-bottom: 29px;
 }
 
 .product-search-subtitle {
@@ -441,6 +446,7 @@ body {
 }
 
 .product-newsletters-subtitle {
+  margin: 0;
   color: var(--color-second);
   margin-bottom: 46px;
 }
@@ -448,14 +454,15 @@ body {
 .subscribtion {
   margin-bottom: 94px;
   display: flex;
+
 }
 
 .subscribtion-field {
   font-size: 18px;
   line-height: 21px;
-  width: 600px;
+  width: 580px;
   padding-left: 22px;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 20px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -513,6 +520,7 @@ body {
 .page-footer {
   color: var(--color-first);
   background-color: var(--color-bg-second);
+  padding: 40px 70px 30px 70px;
 }
 
 .page-footer-container {
@@ -520,19 +528,10 @@ body {
   justify-content: space-between;
   width: 1060px;
   margin: auto;
-  padding: 40px 70px 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.footer-social {
-  width: 142px;
-  align-self: center;
-  padding: 5px;
-}
-
-.footer-social-link {
-  width: 47px;
-  height: 40px;
-}
 
 .footer-contacts {
   width: 350px;
@@ -559,16 +558,28 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  list-style-type: none;
+}
+
+.footer-social-item {
+  display: block;
+  width: 48px;
+  height: 40px;
+  position: relative;
+
 }
 
 .footer-social-link {
-  position: relative;
+  min-width: 48px;
+  min-height: 40px;
+  box-sizing: border-box;
+
 }
 
 .footer-link-icon {
@@ -586,7 +597,7 @@ body {
   fill: var(--color-fifth);
 }
 
-.footer-link-icon:active {
+.footer-social-link:active footer-link-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -615,9 +626,6 @@ body {
   color: var(--color-first);
 }
 
-.footer-link {
-  text-decoration: none;
-}
 
 /*модальное окно */
 
@@ -1392,6 +1400,7 @@ body {
 .price-range-table::-webkit-outer-spin-button,
 .price-range-table::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  margin: 0;
 }
 
 
