@@ -673,7 +673,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 62px 70px;
+  padding: 62px 68px 70px 68px;
   background-color: var(--color-bg-second);
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -687,8 +687,8 @@ body {
   .modal-close-button {
     position: absolute;
     padding: 0;
-    top: 55px;
-    right: 73px;
+    top: 53px;
+    right: 70px;
     width: 53px;
     height: 53px;
     border: 3px solid transparent;
@@ -718,6 +718,7 @@ body {
 
 .modal-title {
   margin: 0;
+  padding: 0;
   margin-bottom: 63px;
   font-family: inherit;
   font-size: 30px;
@@ -749,6 +750,7 @@ body {
   display: flex;
   width: 575px;
   justify-content: space-between;
+
 
 }
 
@@ -794,11 +796,15 @@ body {
   line-height: 21px;
   max-width: 420px;
   margin-left: 155px;
-  margin-bottom: 11px;;
+  margin-bottom: 11px;
+  display: flex;
+  min-height: 29px;
+  align-items: flex-end;
 }
 
 .comment-input-error {
   color: var(--color-twelfth);
+
 }
 
 .input-field-date {
