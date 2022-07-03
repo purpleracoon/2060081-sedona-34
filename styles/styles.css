@@ -91,6 +91,37 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-second);
+  background-color: var(--color-bg-third);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button:focus,
+.button:hover {
+  color: var(--color-second);
+  background-color: var(--color-bg-ninth);
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-bg-third);
+}
+
+.button:disabled {
+  color: var(--color-second);
+  background-color: var(--color-bg-first);
+}
+
 /* Шапка */
 .page-header {
   background-color: var(--color-bg-second);
@@ -626,10 +657,6 @@ body {
   color: var(--color-first);
 }
 
-
-/*модальное окно */
-
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -659,7 +686,7 @@ body {
   position: absolute;
   padding: 0;
   top: 55px;
-  right: 75px;
+  right: 73px;
   width: 53px;
   height: 53px;
   border: 3px solid transparent;
@@ -747,6 +774,11 @@ body {
   padding-right: 25px;
 }
 
+.wrapper-comment {
+  display: flex;
+  margin-bottom: 11px;
+}
+
 .modal-input-comment {
   margin: 0;
   color: var(--color-third);
@@ -755,10 +787,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 11px;
-  min-width: 420px;
-  position: relative;
-  left: 157px;
+  max-width: 420px;
+  margin-left: 155px;
 }
 
 .comment-input-error {
@@ -798,26 +828,27 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 288px;
-  margin-right: 55px;
+  margin-right: 57px;
 }
 
 .minus-icon {
-  position: absolute;
   width: 13px;
   height: 1px;
   fill: rgba(0, 0, 0, 0.3);
+  padding: 12px 6px;
 
 }
 
 .before-input:hover .minus-icon {
   fill: var(--color-first);
 }
+
 .before-input:focus .minus-icon {
   fill: var(--color-first);
   outline: 3px solid var(--color-ninth);
 }
 
-.before-input:active .minus-icon{
+.before-input:active .minus-icon {
   fill: rgba(0, 0, 0, 0.2);
 }
 
@@ -828,10 +859,9 @@ body {
 }
 
 .plus-icon {
-  top: 20px;
-  left: 260px;
   width: 13px;
   height: 13px;
+  padding: 6px;
   fill: rgba(0, 0, 0, 0.3);
 }
 
@@ -861,15 +891,13 @@ body {
   box-sizing: border-box;
 }
 
-
-
 .modal-number-wrapper {
   display: flex;
   margin-bottom: 40px;
 }
 
 .modal-container-close {
-  display: block;
+  display: none;
 
 }
 
@@ -896,54 +924,11 @@ body {
 }
 
 
-.minus-icon-kids {
-  position: absolute;
-  top: 25px;
-  left: 110px;
-  width: 13px;
-  height: 1px;
-  fill: rgba(0, 0, 0, 0.3);
-}
-
-.minus-icon-kids:hover {
-  fill: var(--color-first);
-}
-
-.minus-icon-kids:focus {
-  fill: var(--color-first);
-  outline: 3px solid var(--color-ninth);
-}
-
-.minus-icon-kids:active {
-  fill: rgba(0, 0, 0, 0.2);
-}
-
-.plus-icon-kids {
-  position: absolute;
-  top: 20px;
-  left: 200px;
+.plus-icon {
   width: 13px;
   height: 13px;
   fill: rgba(0, 0, 0, 0.3);
 }
-
-.plus-icon-kids:hover {
-  fill: var(--color-first);
-}
-
-.plus-icon-kids:focus {
-  fill: var(--color-first);
-  outline: 3px solid var(--color-ninth);
-}
-
-.plus-icon-kids:active {
-  fill: rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-/* тултип */
 
 .tooltip {
   position: absolute;
@@ -1013,40 +998,37 @@ body {
   margin-right: auto;
 }
 
+.modal-button {
+  font-family: "PT Sans";
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  border: 0;
+  background-color: var(--color-bg-tenth);
+  border-radius: 10px;
+  padding: 12px 26px;
+  width: 575px;
+}
 
+.modal-button:hover {
+  background-color: var(--color-bg-eighth);
+}
+
+.modal-button:focus {
+  background-color: var(--color-bg-eighth);
+  outline: 3px solid var(--color-bg-eleventh);
+}
+
+.modal-button:active {
+  background-color: var(--color-bg-eighth);
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /* Кнопки главной и каталога*/
 
-.button {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: var(--color-second);
-  background-color: var(--color-bg-third);
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
-.button:focus,
-.button:hover {
-  color: var(--color-second);
-  background-color: var(--color-bg-ninth);
-}
 
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: var(--color-bg-third);
-}
 
-.button:disabled {
-  color: var(--color-second);
-  background-color: var(--color-bg-first);
-}
 
 .search-button {
   font-size: 20px;
@@ -1248,32 +1230,7 @@ body {
   color: var(--color-third);
 }
 
-.modal-button {
-  font-family: "PT Sans";
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  padding: 0;
-  border: 0;
-  background-color: var(--color-bg-tenth);
-  border-radius: 10px;
-  padding: 12px 26px;
-  width: 575px;
-}
 
-.modal-button:hover {
-  background-color: var(--color-bg-eighth);
-}
-
-.modal-button:focus {
-  background-color: var(--color-bg-eighth);
-  outline: 3px solid var(--color-bg-eleventh);
-}
-
-.modal-button:active {
-  background-color: var(--color-bg-eighth);
-  color: rgba(255, 255, 255, 0.3);
-}
 
 /* Страница каталога */
 

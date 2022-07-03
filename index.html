@@ -253,44 +253,47 @@
       </div>
     </footer>
 
+    <!-- Модальное окно-->
+
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
-          <svg class="close-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
-          </svg>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-
         <section class="modal-content">
+          <button class="modal-close-button">
+            <svg class="close-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="modal-form">
               <legend class="modal-title">Поиск гостиницы в Седоне</legend>
               <ul class="modal-form-list">
                 <li class="modal-form-item">
                   <div class="input-date">
-                    <label class="modal-label" for="date">Дата заезда: </label>
+                    <label class="modal-label" for="date">Дата Заезда: </label>
                     <input class="input-field-date" type="text" name="date" id="date"
                       placeholder="27 апреля 2020">
                   </div>
+<div class="wrapper-comment">
                   <p class="modal-input-comment comment-input-error">Мы не можем отправить вас в прошлое.</p>
+                </div>
                 </li>
                 <li class="modal-form-item">
 
                   <div class="input-date">
-                    <label class="modal-label" for="date"> Дата выезда: </label>
+                    <label class="modal-label" for="date"> Дата Выезда: </label>
                     <input class="input-field-date" type="text" name="date" id="date"
-                    placeholder="21 сентября 2021">
+                    placeholder="1 сентября 2021">
                   </div>
-                  <p class="modal-input-comment">На эти даты есть свободные номера. Пока есть.</p>
+                  <div class="wrapper-comment"> <p class="modal-input-comment">На эти даты есть свободные номера. Пока есть.</p>
+                  </div>
                 </li>
-
                 <div class="modal-number-wrapper">
                   <li class="modal-form-item">
                     <div class="input-number-adults">
-                      <label class="modal-label" for="number"> Врослые: </label>
+                      <label class="modal-label" for="number"> Взрослые: </label>
                       <button class="before-input" type="button">
                         <svg class="minus-icon" aria-hidden="true" focusable="false" width="13" height="1"
                         viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
@@ -337,18 +340,18 @@
                         <path d="M0 0v1h13V0H0Z" />
                       </svg>
                     </button>
-                      <input class="auth-form-field" type="text" name="number" id="number"
-                        value="1">
-                        <button class="after-input" type="button">
-                      <svg class="plus-icon" aria-hidden="true" focusable="false" width="13" height="13"
-                        viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                      </svg>
-                    </button>
-                    </div>
-                  </li>
+                    <input class="auth-form-field" type="text" name="number" id="number"
+                    value="1">
+                    <button class="after-input" type="button">
+                  <svg class="plus-icon" aria-hidden="true" focusable="false" width="13" height="13"
+                    viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                  </svg>
+                </button>
                 </div>
-                <button class="button modal-button" type="submit">Найти</button>
+              </li>
+            </div>
+            <button class="button modal-button" type="submit">Найти</button>
           </form>
         </section>
       </div>
