@@ -197,6 +197,14 @@ body {
   list-style-type: none;
 }
 
+.navigation-user .navigation-item .navigation-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .navigation-user-icon {
   fill: var(--color-first);
 }
@@ -909,7 +917,7 @@ body {
 }
 
 .modal-container-close {
-  display: block;
+  display: none;
 
 }
 
