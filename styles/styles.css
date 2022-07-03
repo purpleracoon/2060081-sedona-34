@@ -174,9 +174,9 @@ body {
 
 .navigation-link-current::before {
   position: absolute;
-  right: 10px;
+  right: 15px;
   bottom: 0;
-  left: 20px;
+  left: 15px;
   height: 2px;
   background-color: var(--color-fourth);
   content: "";
@@ -606,7 +606,7 @@ body {
 
 }
 
-.footer-social-link {
+.footer-link {
   min-width: 48px;
   min-height: 40px;
   box-sizing: border-box;
@@ -623,12 +623,12 @@ body {
   fill: var(--color-ninth);
 }
 
-.footer-link-icon:hover,
-.footer-link-icon:focus {
+.footer-link:hover .footer-link-icon,
+.footer-link:focus .footer-link-icon {
   fill: var(--color-fifth);
 }
 
-.footer-social-link:active footer-link-icon {
+.footer-link:active .footer-link-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -657,6 +657,8 @@ body {
   color: var(--color-first);
 }
 
+/*модальное окно */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -675,37 +677,43 @@ body {
   background-color: var(--color-bg-second);
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-}
+  }
 
 
-.modal-auth {
-  width: 575px;
-}
+  .modal-auth {
+    width: 575px;
+  }
 
-.modal-close-button {
-  position: absolute;
-  padding: 0;
-  top: 55px;
-  right: 73px;
-  width: 53px;
-  height: 53px;
-  border: 3px solid transparent;
-  border-radius: 50%;
-  background-color: var(--color-bg-fourth);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 55px;
+    right: 73px;
+    width: 53px;
+    height: 53px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background-color: var(--color-bg-fourth);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.modal-close-button:hover {
-  background-color: var(--color-bg-thirteenth);
-}
+  .modal-close-button:hover {
+    background-color: var(--color-bg-thirteenth);
+  }
 
-.modal-close-button:focus {
-  background-color: var(--color-bg-thirteenth);
-  border: 3px solid var(--color-bg-tenth);
-}
+  .modal-close-button:focus {
+    background-color: var(--color-bg-thirteenth);
+    border: 3px solid var(--color-bg-tenth);
+  }
+
+  .modal-close-button:active {
+    background-color: var(--color-bg-thirteenth);
+    fill: rgba(0, 0, 0, 0.3);
+  }
+
 
 .modal-title {
   margin: 0;
@@ -774,10 +782,6 @@ body {
   padding-right: 25px;
 }
 
-.wrapper-comment {
-  display: flex;
-  margin-bottom: 11px;
-}
 
 .modal-input-comment {
   margin: 0;
@@ -789,6 +793,7 @@ body {
   line-height: 21px;
   max-width: 420px;
   margin-left: 155px;
+  margin-bottom: 11px;;
 }
 
 .comment-input-error {
@@ -897,7 +902,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: block;
 
 }
 
@@ -1003,26 +1008,25 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  padding: 0;
   border: 0;
   background-color: var(--color-bg-tenth);
   border-radius: 10px;
   padding: 12px 26px;
   width: 575px;
 }
-
 .modal-button:hover {
   background-color: var(--color-bg-eighth);
 }
-
 .modal-button:focus {
   background-color: var(--color-bg-eighth);
   outline: 3px solid var(--color-bg-eleventh);
 }
-
 .modal-button:active {
   background-color: var(--color-bg-eighth);
   color: rgba(255, 255, 255, 0.3);
 }
+
 
 /* Кнопки главной и каталога*/
 
@@ -1040,7 +1044,7 @@ body {
 }
 
 .subscribe-button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-size: 20px;
   line-height: 36px;
   background-color: var(--color-bg-fifth);
@@ -1133,7 +1137,7 @@ body {
   border: 3px solid var(--color-ninth);
 }
 
-.buttton-view {
+.button-view {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1242,7 +1246,7 @@ body {
   color: var(--color-second);
   background-image: url("../images/catalog/product-form-background.jpg");
   background-size: cover;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 68px 70px;
 }
 
 .inner-header-title {
@@ -1270,7 +1274,7 @@ body {
 }
 
 .products-form-search {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .breadcrumbs-link-home {
@@ -1322,9 +1326,13 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
+  padding: 0;
 }
 
+.catalog-filter-title-price {
+  margin-bottom: 34px;
+}
 .catalog-filter-form {
   display: flex;
   flex-wrap: wrap;
@@ -1338,6 +1346,98 @@ body {
   list-style-type: none;
 }
 
+
+/* чекбокс */
+
+.catalog-filter-group-benefits {
+  padding: 0;
+  width: 150px;
+  margin-right: 68px;
+  border: none;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-bg-second);
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid var(--color-bg-tenth);
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 3px solid var(--color-bg-tenth);
+}
+
+.control-input[type="checkbox"]:checked+.control-mark {
+  background-image: url("../images/catalog/checkbox-control-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+
+/* радио */
+
+.control-radio {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-bg-second);
+  border-radius: 4px;
+}
+
+
+.control-input-radio[type="radio"]+.control-mark-radio {
+  border-radius: 50%;
+}
+
+.control-input-radio[type="radio"]:checked+.control-mark-radio {
+  background-image: url("../images/catalog/radio-control-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.control-radio:hover .control-mark-radio {
+  background-color: var(--color-bg-second);
+}
+
+.control-radio:focus .control-mark-radio {
+  background-color: var(--color-bg-second);
+  outline: 3px solid var(--color-bg-tenth);
+}
+
+.control-radio:active .control-mark-radio {
+  background-color: var(--color-bg-second);
+}
 /* бегунок */
 
 .range-scale {
@@ -1408,7 +1508,7 @@ body {
   line-height: 21px;
   color: var(--color-second);
   box-sizing: border-box;
-  padding: 14px 20px;
+  padding: 13px 20px;
   outline: none;
 }
 
@@ -1447,8 +1547,8 @@ body {
 
 .price-range-left {
   position: absolute;
-  left: 56%;
-  top: 58%;
+  right: 41%;
+  top: 45%;
   color: rgba(255, 255, 255, 0.3);
 
 }
@@ -1463,114 +1563,24 @@ body {
 
 .price-range-right {
   position: absolute;
-  left: 63%;
-  top: 58%;
+  left: 67%;
+  top: 45%;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .wrapper-inputs-range {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 32px;
-}
-
-/* чекбокс */
-
-.catalog-filter-group-benefits {
-  padding: 0;
-  width: 150px;
-  margin-right: 70px;
-  border: none;
-}
-
-.control {
-  position: relative;
-  display: block;
-  padding-left: 40px;
-}
-
-.control-mark {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  background-color: var(--color-bg-second);
-  border-radius: 4px;
-}
-
-.control:hover .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.control:focus .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
-  outline: 3px solid var(--color-bg-tenth);
-}
-
-.control:active .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
-  outline: 3px solid var(--color-bg-tenth);
-}
-
-.control-input[type="checkbox"]:checked+.control-mark {
-  background-image: url("../images/catalog/checkbox-control-mark.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.catalog-filter-item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 27px;
 }
 
 
-/* радио */
-
-.control-radio {
-  position: relative;
-  display: block;
-  padding-left: 40px;
-}
-
-.control-mark-radio {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  background-color: var(--color-bg-second);
-  border-radius: 4px;
-}
-
-
-.control-input-radio[type="radio"]+.control-mark-radio {
-  border-radius: 50%;
-}
-
-.control-input-radio[type="radio"]:checked+.control-mark-radio {
-  background-image: url("../images/catalog/radio-control-mark.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.control-radio:hover .control-mark-radio {
-  background-color: var(--color-bg-second);
-}
-
-.control-radio:focus .control-mark-radio {
-  background-color: var(--color-bg-second);
-  outline: 3px solid var(--color-bg-tenth);
-}
-
-.control-radio:active .control-mark-radio {
-  background-color: var(--color-bg-second);
-}
 
 /* цены */
 .catalog-filter-group-hotel {
   width: 146px;
   padding: 0;
-  margin-right: 167px;
+  margin-right: 171px;
   border: none;
 }
 
@@ -1661,6 +1671,7 @@ body {
   width: 48px;
   height: 48px;
   border: 2px solid var(--color-seventh);
+  border-radius: 4px;
 }
 
 .filter-link-current {
@@ -1668,6 +1679,7 @@ body {
   width: 48px;
   height: 48px;
   margin-right: 8px;
+  border-radius: 4px;
 }
 
 .button-view {
