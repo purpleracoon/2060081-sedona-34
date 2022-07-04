@@ -204,7 +204,6 @@ body {
 }
 
 
-
 .navigation-user-icon {
   fill: var(--color-first);
 }
@@ -759,7 +758,6 @@ body {
   width: 575px;
   justify-content: space-between;
 
-
 }
 
 .input-field-date {
@@ -911,13 +909,15 @@ body {
   box-sizing: border-box;
 }
 
+
+
 .modal-number-wrapper {
   display: flex;
   margin-bottom: 40px;
 }
 
 .modal-container-close {
-  display: none;
+  display: block;
 
 }
 
