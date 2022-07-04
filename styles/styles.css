@@ -512,7 +512,7 @@ rgba(117, 97, 87, 0.3);
   line-height: 21px;
   width: 580px;
   padding-left: 22px;
-  padding-top: 21px;
+  padding-top: 20px;
   padding-bottom: 20px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -561,7 +561,9 @@ rgba(117, 97, 87, 0.3);
   color: var(--color-first);
 }
 
+
 .product-newsletters-subtitle-inner {
+  margin: 0;
   color: var(--color-first);
   margin-bottom: 46px;
 }
@@ -1112,7 +1114,6 @@ rgba(117, 97, 87, 0.3);
   cursor: pointer;
   padding: 14px 15px;
   width: 160px;
-  margin-top: 58px;
   margin-bottom: 20px;
 }
 
@@ -1603,6 +1604,7 @@ rgba(117, 97, 87, 0.3);
 .catalog-filter-group-buttons {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   width: 160px;
   margin-left: auto;
 
@@ -1612,6 +1614,7 @@ rgba(117, 97, 87, 0.3);
 .catalog-products-results {
   padding: 55px 72px;
   background-color: var(--color-bg-second);
+  margin-bottom: 43px;
 }
 
 .products-catalog-filter {
@@ -1763,10 +1766,11 @@ rgba(117, 97, 87, 0.3);
   width: 300px;
   height: 28px;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   align-self: center;
 }
 
+/*
 .product-price-range {
   font-size: 24px;
   line-height: 28px;
@@ -1774,13 +1778,14 @@ rgba(117, 97, 87, 0.3);
   align-self: center;
   margin-bottom: 16px;
 }
+*/
 
 .product-properties-price {
   display: flex;
   justify-content: space-between;
   width: 300px;
   align-self: center;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .product-properties-buttons {
@@ -1815,25 +1820,43 @@ rgba(117, 97, 87, 0.3);
 
 
 .four-stars {
-  background-image: url("../images/catalog/star-rating.svg");
+  background-image: url("../images/catalog/four-stars.svg");
   background-repeat: repeat-x;
-  width: 72px;
+  width: 90px;
+ background-position: center;
+
 }
 
 .three-stars {
-  background-image: url("../images/catalog/star-rating.svg");
+  background-image: url("../images/catalog/three-stars.svg");
   background-repeat: repeat-x;
-  width: 56px;
+  width: 68px;
   background-position: center;
+
 }
 
 .two-stars {
-  background-image: url("../images/catalog/star-rating.svg");
+  background-image: url("../images/catalog/four-stars.svg");
   background-repeat: repeat-x;
-  width: 36px;
+  width: 42px;
+  background-position: center;
 }
 
 /* Пагинация*/
+
+.pagination-container-big::before {
+  height: 2px;
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  width: 1056px;
+  color: green;
+  }
+
+
+
+
+
 .pagination-container-big {
   display: flex;
   justify-content: space-between;
@@ -1895,6 +1918,9 @@ rgba(117, 97, 87, 0.3);
   line-height: 21px;
   font-weight: 400;
   margin-left: auto;
+  display: flex;
+  align-items: center;
+
 }
 
 .hotels-number-page {
@@ -1908,7 +1934,8 @@ rgba(117, 97, 87, 0.3);
   margin-left: 50px;
   border: 2px solid var(--color-seventh);
   background-image: url("../images/catalog/arrow-down-icon.svg");
-  background-position: 90% 50%;
+  border-radius: 4px;
+  background-position: 89% 50%;
   background-repeat: no-repeat;
   -webkit-appearance: none;
   -moz-appearance: none;
