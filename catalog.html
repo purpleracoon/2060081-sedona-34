@@ -95,7 +95,7 @@
 
 
             <fieldset class="catalog-filter-group-benefits">
-              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -122,7 +122,7 @@
             </fieldset>
 
             <fieldset class="catalog-filter-group-hotel">
-              <legend class="catalog-filter-title">Тип Жилья</legend>
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control-radio">
@@ -156,9 +156,10 @@
             <fieldset class="catalog-filter-group-range">
               <legend class="catalog-filter-title catalog-filter-title-price">Стоимость, ₽:</legend>
               <div class="wrapper-inputs-range">
+                <label class="price-range-left" for="price-min">от</label>
                 <input class="price-range-table input-left" type="text" placeholder="0" id="price-min"
                   name="price-min">
-                <label class="price-range-left" for="price-min">от</label>
+
 
                 <input class="price-range-table input-right" type="text" placeholder="9000" id="price-max"
                   name="price-max">
@@ -198,14 +199,14 @@
           </div>
 
           <select class="select-control" aria-label="сортировка">
+            <option value="expensive">Сначала дешевые </option>
             <option value="popular">Сначала популярные </option>
-            <option value="cheap">Сначала дешевые </option>
             <option value="expensive">Сначала дорогие </option>
           </select>
 
           <ul class="catalog-filter-box">
             <li class="catalog-filter-link filter-link-current">
-              <a class="button-view" href="#" type="button">
+              <a class="button-view button-view-current" href="#" type="button">
                 <svg class="button-view-small" width="16" height="14" viewBox="0 0 16 14"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
