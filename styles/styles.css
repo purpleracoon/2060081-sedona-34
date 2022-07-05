@@ -347,21 +347,23 @@ body {
 }
 
 .advantages-details {
-  margin:0;
+  margin: 0;
 }
 
+/*
 .advantages-details-hotel {
   color: var(--color-third);
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   width: 180px;
 }
+*/
 
 .advantages-details-number {
   width: 230px;
   margin-top: 0;
   margin-bottom: 30px;
 }
-
 
 .advantages-main {
   margin: 0;
