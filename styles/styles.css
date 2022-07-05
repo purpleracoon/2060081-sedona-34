@@ -146,7 +146,7 @@ body {
 
 .page-logo {
   display: block;
-  margin-right: 26px;
+  margin-right: 28px;
   width: 139px;
   margin-bottom: -5px;
 }
@@ -350,14 +350,15 @@ body {
   margin: 0;
 }
 
-/*
+
 .advantages-details-hotel {
   color: var(--color-third);
   margin-right: auto;
   margin-left: auto;
   width: 180px;
 }
-*/
+
+
 
 .advantages-details-number {
   width: 230px;
@@ -482,7 +483,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 94px 200px;
 }
+
 
 .product-newsletters-title {
   font-size: 30px;
@@ -490,10 +493,19 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-second);
-  margin-top: 94px;
-  margin-bottom: 29px;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
+
+.product-newsletters-title-inner {
+
+  text-transform: uppercase;
+  color: var(--color-second);
+  margin: 0;
+  margin-bottom: 28px;
+  color: var(--color-first);
+}
 .product-newsletters-subtitle {
   margin: 0;
   color: var(--color-second);
