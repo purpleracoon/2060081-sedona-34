@@ -506,6 +506,7 @@ body {
   margin-bottom: 28px;
   color: var(--color-first);
 }
+
 .product-newsletters-subtitle {
   margin: 0;
   color: var(--color-second);
@@ -724,42 +725,42 @@ body {
   background-color: var(--color-bg-second);
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  }
+}
 
 
-  .modal-auth {
-    width: 575px;
-  }
+.modal-auth {
+  width: 575px;
+}
 
-  .modal-close-button {
-    position: absolute;
-    padding: 0;
-    top: 53px;
-    right: 70px;
-    width: 53px;
-    height: 53px;
-    border: 3px solid transparent;
-    border-radius: 50%;
-    background-color: var(--color-bg-fourth);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 53px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-color: var(--color-bg-fourth);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .modal-close-button:hover {
-    background-color: var(--color-bg-thirteenth);
-  }
+.modal-close-button:hover {
+  background-color: var(--color-bg-thirteenth);
+}
 
-  .modal-close-button:focus {
-    background-color: var(--color-bg-thirteenth);
-    border: 3px solid var(--color-bg-tenth);
-  }
+.modal-close-button:focus {
+  background-color: var(--color-bg-thirteenth);
+  border: 3px solid var(--color-bg-tenth);
+}
 
-  .modal-close-button:active {
-    background-color: var(--color-bg-thirteenth);
-    fill: rgba(0, 0, 0, 0.3);
-  }
+.modal-close-button:active {
+  background-color: var(--color-bg-thirteenth);
+  fill: rgba(0, 0, 0, 0.3);
+}
 
 
 .modal-title {
@@ -1058,13 +1059,16 @@ body {
   padding: 12px 26px;
   width: 575px;
 }
+
 .modal-button:hover {
   background-color: var(--color-bg-eighth);
 }
+
 .modal-button:focus {
   background-color: var(--color-bg-eighth);
   outline: 3px solid var(--color-bg-eleventh);
 }
+
 .modal-button:active {
   background-color: var(--color-bg-eighth);
   color: rgba(255, 255, 255, 0.3);
@@ -1362,6 +1366,7 @@ body {
 .catalog-filter-title-price {
   margin-bottom: 34px;
 }
+
 .catalog-filter-form {
   display: flex;
   flex-wrap: wrap;
@@ -1467,6 +1472,7 @@ body {
 .control-radio:active .control-mark-radio {
   background-color: var(--color-bg-second);
 }
+
 /* бегунок */
 
 
@@ -1653,6 +1659,7 @@ body {
   margin: 0 auto;
   margin-bottom: 56px;
 }
+
 .total-container {
   font-size: 30px;
   line-height: 36px;
@@ -1662,6 +1669,7 @@ body {
   margin-right: 190px;
   align-self: center;
 }
+
 .select-control {
   width: 290px;
   margin-right: auto;
@@ -1727,24 +1735,24 @@ body {
   box-sizing: border-box;
   border: 2px solid var(--color-seventh);
   border-radius: 4px;
-  }
+}
 
-  .button-view-current {
-   border: 2px solid var(--color-first);
+.button-view-current {
+  border: 2px solid var(--color-first);
 }
 
 
-  .button-view:hover {
-    border: 2px solid var(--color-first);
-  }
+.button-view:hover {
+  border: 2px solid var(--color-first);
+}
 
-  .button-view:focus {
-    border: 2px solid var(--color-fifth);
-  }
+.button-view:focus {
+  border: 2px solid var(--color-fifth);
+}
 
-  .button-view:active {
-    border: 2px solid var(--color-first);
-  }
+.button-view:active {
+  border: 2px solid var(--color-first);
+}
 
 
 .catalog-filter-link:last-child {
@@ -1819,18 +1827,21 @@ body {
   justify-content: space-between;
   margin-bottom: 16px;
 }
+
 .product-properties-rating {
   display: flex;
   justify-content: space-between;
   width: 300px;
   align-self: center;
 }
+
 .product-type {
   width: 140px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
+
 .product-price {
   width: 140px;
   font-size: 18px;
@@ -1843,7 +1854,7 @@ body {
   background-image: url("../images/catalog/four-stars.svg");
   background-repeat: repeat-x;
   width: 90px;
- background-position: center;
+  background-position: center;
 
 }
 
@@ -1880,7 +1891,7 @@ body {
   height: 2px;
   background-color: var(--color-bg-thirteenth);
   content: "";
-  }
+}
 
 .pagination {
   display: flex;
@@ -1897,18 +1908,18 @@ body {
 
 .pagination-link {
   display: block;
- box-sizing: border-box;
- min-height: 60px;
-    min-width: 60px;
-    padding: 11px 23px;
-    color: var(--color-second);
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    background-color: var(--color-bg-fifth);
-    border: 1px solid var(--color-bg-fifth);
-    border-radius: 4px;
-text-decoration: none;
+  box-sizing: border-box;
+  min-height: 60px;
+  min-width: 60px;
+  padding: 11px 23px;
+  color: var(--color-second);
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: var(--color-bg-fifth);
+  border: 1px solid var(--color-bg-fifth);
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .pagination-link-big {
