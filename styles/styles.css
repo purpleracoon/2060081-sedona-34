@@ -28,6 +28,14 @@
   --color-eleventh: #82B3D3;
   --color-twelfth: #FF5757;
   --color-thirteenth: #81B3D2;
+  --color-fourteenth: rgba(0, 0, 0, 0.25);
+  --color-fifteenth: rgba(255, 255, 255, 0.3);
+  --color-sixteenth: rgba(117, 97, 87, 0.3);
+  --color-seventeenth: (104, 162, 202, 0.3);
+  --color-eighteenth: rgba(0, 0, 0, 0.15);
+  --color-nineteenth: rgba(0, 0, 0, 0.3);
+  --color-twentieth: rgba(0, 0, 0, 0.2);
+  --color-twenty-first:rgba(0, 0, 0, 0.6);
   --color-bg-first: #E5E5E5;
   --color-bg-second: #FFFFFF;
   --color-bg-third: #756157;
@@ -41,6 +49,13 @@
   --color-bg-eleventh: #756157;
   --color-bg-twelfth: #756257;
   --color-bg-thirteenth: #E6E6E6;
+  --color-bg-fourteenth: rgba(131, 179, 211, 0.12);
+  --color-bg-fifteenth: rgba(131, 179, 211, 0.2);
+  --color-bg-sixteenth: rgba(242, 242, 242, 0.8);
+  --color-bg-seventeenth: #6C9E42;
+  --color-bg-eighteenth:rgba(255, 255, 255, 0.6);
+  --color-bg-nineteenth: rgba(255, 255, 255, 0.3);
+
 }
 
 html {
@@ -53,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -79,7 +94,7 @@ body {
   background-color: var(--color-bg-second);
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px var(--color-fourteenth);
 }
 
 .wrapper-inner {
@@ -89,7 +104,7 @@ body {
   background-color: var(--color-bg-second);
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px var(--color-fourteenth);
 }
 
 .button {
@@ -115,7 +130,7 @@ body {
 }
 
 .button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   background-color: var(--color-bg-third);
 }
 
@@ -163,7 +178,7 @@ body {
 .navigation-link {
   display: block;
   padding: 20px 17px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -190,7 +205,7 @@ body {
 }
 
 .navigation-link:active {
-  color: rgba(117, 97, 87, 0.3);
+  color: var(--color-sixteenth);
 }
 
 
@@ -226,7 +241,7 @@ body {
 }
 
 .navigation-user .navigation-link:active .navigation-user-icon {
-  fill: rgba(117, 97, 87, 0.3);
+  fill: var(--color-sixteenth)
 }
 
 .navigation-user .navigation-item:last-child .navigation-link {
@@ -383,7 +398,7 @@ body {
 }
 
 .advantages-item-container-small-one {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: var(--color-bg-fourteenth);
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -429,7 +444,7 @@ body {
 }
 
 .advantages-item-container-small-two {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: var(--color-bg-fifteenth);
   width: 400px;
 
 }
@@ -484,6 +499,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 94px 200px;
+  background-size: cover;
 }
 
 
@@ -506,7 +522,6 @@ body {
   margin-bottom: 28px;
   color: var(--color-first);
 }
-
 .product-newsletters-subtitle {
   margin: 0;
   color: var(--color-second);
@@ -519,7 +534,7 @@ body {
 }
 
 .subscribtion-field {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -532,13 +547,15 @@ body {
   border-bottom-left-radius: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border: none;
+  border: 3px solid transparent;
   outline: none;
   background-color: var(--color-bg-fourth);
 }
 
 .subscribtion-field::placeholder {
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--color-first);
+  opacity: 0.6;
+
 }
 
 .subscribtion-field:hover {
@@ -546,7 +563,7 @@ body {
 }
 
 .subscribtion-field:focus {
-  outline: 3px solid var(--color-ninth);
+  border: 3px solid var(--color-ninth);
   background-color: var(--color-bg-thirteenth);
 }
 
@@ -630,7 +647,7 @@ body {
 }
 
 .icon-logo:active {
-  fill: rgba(117, 97, 87, 0.3);
+  fill: var(--color-sixteenth);
 }
 
 .footer-social {
@@ -677,7 +694,7 @@ body {
 }
 
 .footer-link:active .footer-link-icon {
-  fill: rgba(104, 162, 202, 0.3);
+  fill: var(--color-seventeenth);
 }
 
 .contact-phone {
@@ -698,7 +715,7 @@ body {
 }
 
 .contact-phone:active {
-  color: rgba(117, 97, 87, 0.3);
+  color: var(--color-sixteenth);
 }
 
 .page-footer a {
@@ -714,7 +731,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: var(--color-bg-sixteenth);
   z-index: 2;
 }
 
@@ -723,44 +740,44 @@ body {
   margin: auto;
   padding: 62px 68px 70px 68px;
   background-color: var(--color-bg-second);
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 25px 50px var(--color-eighteenth);
   border-radius: 30px;
-}
+  }
 
 
-.modal-auth {
-  width: 575px;
-}
+  .modal-auth {
+    width: 575px;
+  }
 
-.modal-close-button {
-  position: absolute;
-  padding: 0;
-  top: 53px;
-  right: 70px;
-  width: 53px;
-  height: 53px;
-  border: 3px solid transparent;
-  border-radius: 50%;
-  background-color: var(--color-bg-fourth);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 53px;
+    right: 70px;
+    width: 53px;
+    height: 53px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background-color: var(--color-bg-fourth);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.modal-close-button:hover {
-  background-color: var(--color-bg-thirteenth);
-}
+  .modal-close-button:hover {
+    background-color: var(--color-bg-thirteenth);
+  }
 
-.modal-close-button:focus {
-  background-color: var(--color-bg-thirteenth);
-  border: 3px solid var(--color-bg-tenth);
-}
+  .modal-close-button:focus {
+    background-color: var(--color-bg-thirteenth);
+    border: 3px solid var(--color-bg-tenth);
+  }
 
-.modal-close-button:active {
-  background-color: var(--color-bg-thirteenth);
-  fill: rgba(0, 0, 0, 0.3);
-}
+  .modal-close-button:active {
+    background-color: var(--color-bg-thirteenth);
+    fill: var(--color-nineteenth);
+  }
 
 
 .modal-title {
@@ -793,11 +810,11 @@ body {
   background-color: var(--color-bg-fourth);
   border-radius: 4px;
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--color-twenty-first);
   padding: 15px 19px;
   width: 420px;
   box-sizing: border-box;
@@ -805,7 +822,7 @@ body {
 
 
 .modal-label {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -824,7 +841,7 @@ body {
 .modal-input-comment {
   margin: 0;
   color: var(--color-third);
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -881,7 +898,7 @@ body {
 .minus-icon {
   width: 13px;
   height: 1px;
-  fill: rgba(0, 0, 0, 0.3);
+  fill: var(--color-nineteenth)
   padding: 12px 6px;
 
 }
@@ -896,7 +913,7 @@ body {
 }
 
 .before-input:active .minus-icon {
-  fill: rgba(0, 0, 0, 0.2);
+  fill: var(--color-twentieth);
 }
 
 .input-number-kids {
@@ -909,7 +926,7 @@ body {
   width: 13px;
   height: 13px;
   padding: 6px;
-  fill: rgba(0, 0, 0, 0.3);
+  fill: var(--color-nineteenth);
 }
 
 .after-input:hover .plus-icon {
@@ -922,7 +939,7 @@ body {
 }
 
 .after-input:active .plus-icon {
-  fill: rgba(0, 0, 0, 0.2);
+  fill: var(--color-twentieth);
 }
 
 .auth-form-field {
@@ -930,7 +947,7 @@ body {
   text-align: center;
   border: none;
   background-color: var(--color-bg-fourth);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -976,7 +993,7 @@ body {
 .plus-icon {
   width: 13px;
   height: 13px;
-  fill: rgba(0, 0, 0, 0.3);
+  fill: var(--color-nineteenth);
 }
 
 .tooltip {
@@ -1009,7 +1026,7 @@ body {
 
 .tooltip-text {
   background: #333333;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 15px 30px var(--color-nineteenth);
   border-radius: 10px;
   color: var(--color-second);
   font-size: 16px;
@@ -1048,7 +1065,7 @@ body {
 }
 
 .modal-button {
-  font-family: "PT Sans";
+  font-family:"PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1059,19 +1076,16 @@ body {
   padding: 12px 26px;
   width: 575px;
 }
-
 .modal-button:hover {
   background-color: var(--color-bg-eighth);
 }
-
 .modal-button:focus {
   background-color: var(--color-bg-eighth);
   outline: 3px solid var(--color-bg-eleventh);
 }
-
 .modal-button:active {
   background-color: var(--color-bg-eighth);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
 }
 
 
@@ -1088,7 +1102,7 @@ body {
 }
 
 .subscribe-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   background-color: var(--color-bg-fifth);
@@ -1110,7 +1124,7 @@ body {
 }
 
 .subscribe-button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   background-color: var(--color-bg-fifth);
 }
 
@@ -1122,16 +1136,16 @@ body {
 .product-card-button-selected:focus,
 .product-card-button-selected:hover {
   color: var(--color-second);
-  background-color: #6C9E42;
+  background-color: var(--color-seventeenth);
 }
 
 .product-card-button-selected:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   background-color: var(--color-bg-sixth);
 }
 
 .product-card-button-selected:disabled {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   background-color: var(--color-bg-first);
 }
 
@@ -1151,7 +1165,7 @@ body {
 }
 
 .submit-button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   background-color: var(--color-bg-fifth);
 }
 
@@ -1212,28 +1226,28 @@ body {
 }
 
 .product-card-button-add:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   background-color: var(--color-bg-fifth);
 }
 
 .product-card-button-add:disabled {
-  color: #FFFFFF;
+  color: var(--color-second);
   background-color: var(--color-bg-first);
 }
 
 .product-card-button-selected:focus,
 .product-card-button-selected:hover {
-  color: #FFFFFF;
-  background-color: #6C9E42;
+  color: var(--color-second);
+  background-color: var(--color-bg-seventeenth);
 }
 
 .product-card-button-selected:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   background-color: var(--color-bg-sixth);
 }
 
 .product-card-button-selected:disabled {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   background-color: var(--color-bg-first);
 }
 
@@ -1330,7 +1344,7 @@ body {
 }
 
 .link-home-icon:hover {
-  fill: rgba(255, 255, 255, 0.6);
+  fill: var(--color-twenty-first);
 }
 
 .link-home-icon:focus {
@@ -1338,11 +1352,11 @@ body {
 }
 
 .link-home-icon:active {
-  fill: rgba(255, 255, 255, 0.3);
+  fill: var(--color-fifteenth);
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-twenty-first);
 }
 
 .breadcrumbs-link:focus {
@@ -1350,7 +1364,7 @@ body {
 }
 
 .link-home-icon:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
 }
 
 /* формы */
@@ -1366,7 +1380,6 @@ body {
 .catalog-filter-title-price {
   margin-bottom: 34px;
 }
-
 .catalog-filter-form {
   display: flex;
   flex-wrap: wrap;
@@ -1407,16 +1420,16 @@ body {
 }
 
 .control:hover .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--color-bg-eighteenth);
 }
 
 .control:focus .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--color-bg-eighteenth);
   outline: 3px solid var(--color-bg-tenth);
 }
 
 .control:active .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-bg-nineteenth);
   outline: 3px solid var(--color-bg-tenth);
 }
 
@@ -1472,7 +1485,6 @@ body {
 .control-radio:active .control-mark-radio {
   background-color: var(--color-bg-second);
 }
-
 /* бегунок */
 
 
@@ -1485,7 +1497,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-bg-nineteenth);
   border-radius: 4px;
 }
 
@@ -1508,17 +1520,17 @@ body {
 
 .range-toggle:hover {
   background-color: var(--color-second);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px var(--color-fourteenth);
 }
 
 .range-toggle:focus {
   border: 3px solid var(--color-ninth);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px var(--color-fourteenth);
 }
 
 .range-toggle:active {
   border: 2px solid var(--color-ninth);
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 7px 15px var(--color-fourteenth);
 }
 
 
@@ -1543,7 +1555,7 @@ body {
   background-color: transparent;
   color: var(--color-second);
   border: none;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1564,7 +1576,7 @@ body {
 
 .price-range-left {
   position: absolute;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
   left: 110px;
   top: 14px;
 }
@@ -1606,7 +1618,7 @@ body {
   position: absolute;
   right: 20px;
   top: 14px;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
 }
 
 .wrapper-inputs-range {
@@ -1659,7 +1671,6 @@ body {
   margin: 0 auto;
   margin-bottom: 56px;
 }
-
 .total-container {
   font-size: 30px;
   line-height: 36px;
@@ -1669,12 +1680,11 @@ body {
   margin-right: 190px;
   align-self: center;
 }
-
 .select-control {
   width: 290px;
   margin-right: auto;
   padding-left: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -1698,7 +1708,7 @@ body {
 }
 
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--color-fifteenth);
 }
 
 .catalog-filter-box {
@@ -1735,24 +1745,24 @@ body {
   box-sizing: border-box;
   border: 2px solid var(--color-seventh);
   border-radius: 4px;
+  }
+
+  .button-view-current {
+   border: 2px solid var(--color-first);
 }
 
-.button-view-current {
-  border: 2px solid var(--color-first);
-}
 
+  .button-view:hover {
+    border: 2px solid var(--color-first);
+  }
 
-.button-view:hover {
-  border: 2px solid var(--color-first);
-}
+  .button-view:focus {
+    border: 2px solid var(--color-fifth);
+  }
 
-.button-view:focus {
-  border: 2px solid var(--color-fifth);
-}
-
-.button-view:active {
-  border: 2px solid var(--color-first);
-}
+  .button-view:active {
+    border: 2px solid var(--color-first);
+  }
 
 
 .catalog-filter-link:last-child {
@@ -1827,21 +1837,18 @@ body {
   justify-content: space-between;
   margin-bottom: 16px;
 }
-
 .product-properties-rating {
   display: flex;
   justify-content: space-between;
   width: 300px;
   align-self: center;
 }
-
 .product-type {
   width: 140px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
-
 .product-price {
   width: 140px;
   font-size: 18px;
@@ -1854,7 +1861,7 @@ body {
   background-image: url("../images/catalog/four-stars.svg");
   background-repeat: repeat-x;
   width: 90px;
-  background-position: center;
+ background-position: center;
 
 }
 
@@ -1891,7 +1898,7 @@ body {
   height: 2px;
   background-color: var(--color-bg-thirteenth);
   content: "";
-}
+  }
 
 .pagination {
   display: flex;
@@ -1908,18 +1915,18 @@ body {
 
 .pagination-link {
   display: block;
-  box-sizing: border-box;
-  min-height: 60px;
-  min-width: 60px;
-  padding: 11px 23px;
-  color: var(--color-second);
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  background-color: var(--color-bg-fifth);
-  border: 1px solid var(--color-bg-fifth);
-  border-radius: 4px;
-  text-decoration: none;
+ box-sizing: border-box;
+ min-height: 60px;
+    min-width: 60px;
+    padding: 11px 23px;
+    color: var(--color-second);
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    background-color: var(--color-bg-fifth);
+    border: 1px solid var(--color-bg-fifth);
+    border-radius: 4px;
+text-decoration: none;
 }
 
 .pagination-link-big {
@@ -1935,7 +1942,7 @@ body {
 .pagination-item:not(:first-child) .pagination-link:disabled {
   border: 1px solid var(--color-bg-fifth);
   background-color: var(--color-bg-fifth);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-fifteenth);
 }
 
 .pagination-current {
@@ -1994,5 +2001,5 @@ body {
 }
 
 .hotels-number-page:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--color-fifteenth);
 }
