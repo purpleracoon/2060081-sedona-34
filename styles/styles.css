@@ -568,7 +568,7 @@ body {
 }
 
 .subscribtion-field:not(:placeholder-shown) {
-  outline: 2px solid var(--color-first);
+  border: 2px solid var(--color-first);
   background-color: var(--color-bg-second);
   color: var(--color-first);
 }
