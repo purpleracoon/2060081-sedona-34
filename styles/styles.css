@@ -31,7 +31,7 @@
   --color-fourteenth: rgba(0, 0, 0, 0.25);
   --color-fifteenth: rgba(255, 255, 255, 0.3);
   --color-sixteenth: rgba(117, 97, 87, 0.3);
-  --color-seventeenth: (104, 162, 202, 0.3);
+  --color-seventeenth: rgba(104, 162, 202, 0.3);
   --color-eighteenth: rgba(0, 0, 0, 0.15);
   --color-nineteenth: rgba(0, 0, 0, 0.3);
   --color-twentieth: rgba(0, 0, 0, 0.2);
@@ -522,6 +522,7 @@ body {
   margin-bottom: 28px;
   color: var(--color-first);
 }
+
 .product-newsletters-subtitle {
   margin: 0;
   color: var(--color-second);
@@ -538,24 +539,24 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  width: 576px;
   line-height: 21px;
-  width: 580px;
-  padding-left: 22px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 19px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border: 3px solid transparent;
-  outline: none;
   background-color: var(--color-bg-fourth);
+  margin: 0;
+
 }
 
 .subscribtion-field::placeholder {
   color: var(--color-first);
   opacity: 0.6;
-
 }
 
 .subscribtion-field:hover {
@@ -565,6 +566,7 @@ body {
 .subscribtion-field:focus {
   border: 3px solid var(--color-ninth);
   background-color: var(--color-bg-thirteenth);
+  outline: none;
 }
 
 .subscribtion-field:not(:placeholder-shown) {
@@ -1156,6 +1158,8 @@ body {
   padding: 14px 15px;
   max-width: 160px;
   margin-bottom: 20px;
+  border: none;
+  outline: none;
 }
 
 .submit-button:hover,
@@ -1177,12 +1181,12 @@ body {
 .reset-button {
   text-transform: none;
   background-color: transparent;
-  border: none;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   padding: 0;
+  border: 3px solid transparent;
 }
 
 .reset-button:hover {
@@ -1321,7 +1325,7 @@ body {
 }
 
 .products-form-search {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link-home {
@@ -1373,12 +1377,12 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding: 0;
 }
 
 .catalog-filter-title-price {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 .catalog-filter-form {
   display: flex;
@@ -1592,7 +1596,7 @@ body {
 }
 
 .price-range-table:not(:placeholder-shown) {
-  background: var(--color-bg-twelfth);
+  background-color: var(--color-bg-twelfth);
   border: 2px solid var(--color-second);
 }
 
@@ -1848,12 +1852,15 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  color: var(--color-third);
 }
+
 .product-price {
   width: 140px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  color: var(--color-third);
 }
 
 
@@ -1861,7 +1868,7 @@ body {
   background-image: url("../images/catalog/four-stars.svg");
   background-repeat: repeat-x;
   width: 90px;
- background-position: center;
+  background-position: center;
 
 }
 
