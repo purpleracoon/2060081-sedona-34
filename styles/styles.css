@@ -141,12 +141,11 @@ body {
   background-color: var(--color-bg-first);
 }
 
-/* Шапка */
 .page-header {
   background-color: var(--color-bg-second);
 }
 
-/* Навигация / ссылки */
+
 .navigation {
   display: flex;
   width: 1056px;
@@ -226,7 +225,7 @@ body {
   list-style-type: none;
 }
 
-.navigation-user .navigation-item .navigation-link {
+.navigation-user .navigation-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,20 +236,20 @@ body {
   fill: var(--color-first);
 }
 
-.navigation-user .navigation-link:hover .navigation-user-icon,
-.navigation-user .navigation-link:focus .navigation-user-icon {
+.navigation-link:hover .navigation-user-icon,
+.navigation-link:focus .navigation-user-icon {
   fill: var(--color-bg-third);
 }
 
-.navigation-user .navigation-link:active .navigation-user-icon {
+.navigation-link:active .navigation-user-icon {
   fill: var(--color-sixteenth)
 }
 
-.navigation-user .navigation-item:last-child .navigation-link {
+.navigation-user .navigation-item:last-child {
   position: relative;
 }
 
-.navigation-user .navigation-item:last-child .navigation-link::after {
+.navigation-user .navigation-item:last-child::after {
   position: absolute;
   content: "";
   display: block;
@@ -281,16 +280,14 @@ body {
   display: block;
 }
 
-/* Главная */
 
-/* Промо-блок */
-
-.sedona-promo-information {
+.site-promo-information {
   padding-top: 51px;
   padding-bottom: 82px;
+  text-align: center;
 }
 
-.sedona-presentation {
+.site-presentation {
   background-color: var(--color-bg-second);
   color: var(--color-first);
   background-image: url("../images/index/index-background-welcome.jpg");
@@ -299,7 +296,7 @@ body {
   position: relative;
 }
 
-.sedona-presentation:after {
+.site-presentation:after {
   position: absolute;
   width: 1200px;
   height: 57px;
@@ -315,7 +312,7 @@ body {
   align-items: center;
 }
 
-.sedona-slogan-title {
+.slogan-title {
   margin: 0;
   font-size: 30px;
   line-height: 36px;
@@ -328,7 +325,7 @@ body {
   max-width: 620px;
 }
 
-.sedona-slogan-subtitle {
+.slogan-subtitle {
   margin: 0;
   color: var(--color-third);
   background-color: var(--color-bg-second);
@@ -336,11 +333,7 @@ body {
   text-align: center;
 }
 
-.sedona-promo-information {
-  text-align: center;
-}
 
-/* Преимущества */
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -604,7 +597,6 @@ body {
   margin-bottom: 46px;
 }
 
-/* Футер */
 .page-footer {
   color: var(--color-first);
   background-color: var(--color-bg-second);
@@ -726,7 +718,6 @@ body {
   color: var(--color-first);
 }
 
-/*модальное окно */
 
 .modal-container {
   position: fixed;
@@ -902,8 +893,8 @@ body {
 .minus-icon {
   width: 13px;
   height: 1px;
-  fill: var(--color-nineteenth) padding: 12px 6px;
-
+  fill: var(--color-nineteenth);
+  padding: 12px 6px;
 }
 
 .before-input:hover .minus-icon {
@@ -1093,9 +1084,6 @@ body {
   background-color: var(--color-bg-eighth);
   color: var(--color-fifteenth);
 }
-
-
-/* Кнопки главной и каталога*/
 
 
 .search-button {
@@ -1403,9 +1391,6 @@ body {
   list-style-type: none;
 }
 
-
-/* чекбокс */
-
 .catalog-filter-group-benefits {
   padding: 0;
   width: 150px;
@@ -1443,7 +1428,7 @@ body {
   outline: 3px solid var(--color-bg-tenth);
 }
 
-.control-input[type="checkbox"]:checked+.control-mark {
+.control-input[type="checkbox"]:checked +.control-mark {
   background-image: url("../images/catalog/checkbox-control-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1473,14 +1458,15 @@ body {
 }
 
 
-.control-input-radio[type="radio"]+.control-mark-radio {
+.control-input-radio[type="radio"] +.control-mark-radio {
   border-radius: 50%;
 }
 
-.control-input-radio[type="radio"]:checked+.control-mark-radio {
+.control-input-radio[type="radio"]:checked +.control-mark-radio {
   background-image: url("../images/catalog/radio-control-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
+
 }
 
 .control-radio:hover .control-mark-radio {
@@ -1495,9 +1481,6 @@ body {
 .control-radio:active .control-mark-radio {
   background-color: var(--color-bg-second);
 }
-
-/* бегунок */
-
 
 .range {
   max-width: 288px;
@@ -1639,9 +1622,6 @@ body {
   position: relative;
 }
 
-
-
-/* цены */
 .catalog-filter-group-hotel {
   width: 146px;
   padding: 0;
@@ -1664,7 +1644,6 @@ body {
 
 }
 
-/* результаты подбора */
 .catalog-products-results {
   padding: 56px 72px;
   background-color: var(--color-bg-second);
@@ -1677,6 +1656,8 @@ body {
 
 .products-results-total {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   width: 1056px;
   margin: 0 auto;
   margin-bottom: 56px;
@@ -1723,28 +1704,11 @@ body {
   border: 2px solid var(--color-fifteenth);
 }
 
-.catalog-filter-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
 
-.catalog-filter-link:not(:first-child) {
+.button-view:not(:first-child) {
   margin-right: 8px;
-  width: 48px;
-  height: 48px;
-
 }
 
-.filter-link-current {
-  width: 48px;
-  height: 48px;
-  margin-right: 8px;
-  border-radius: 4px;
-}
 
 .button-view {
   display: flex;
@@ -1781,7 +1745,6 @@ body {
   margin-right: 0;
 }
 
-/* Продуктовый каталог */
 .product-list {
   display: grid;
   margin: 0;
@@ -1796,12 +1759,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--color-bg-second);
-
 }
 
 .product-card-title-link {
   text-decoration: none;
-
 }
 
 .product-card-image-link {
@@ -1897,9 +1858,6 @@ body {
   background-position: center;
 }
 
-
-/* Pagination */
-
 .pagination-container-big {
   display: flex;
   width: 1056px;
@@ -1976,7 +1934,6 @@ body {
   border: none;
 }
 
-
 .select-label {
   font-size: 18px;
   line-height: 21px;
@@ -1985,10 +1942,7 @@ body {
   display: flex;
   align-items: center;
   width: 386px;
-
 }
-
-
 
 .hotels-number-page {
   font-size: 18px;
