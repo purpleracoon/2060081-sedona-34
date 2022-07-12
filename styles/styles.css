@@ -1611,7 +1611,7 @@ body {
 .button-wrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 168px;
+  max-width: 224px;
 }
 
 .button-view:not(:last-child) {
