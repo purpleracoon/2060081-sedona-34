@@ -1557,7 +1557,7 @@ body {
   justify-content: flex-end;
   width: 1056px;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 53px;
 }
 
 .total-container {
@@ -1608,10 +1608,16 @@ body {
   border: 2px solid var(--color-fifteenth);
 }
 
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 168px;
+}
 
 .button-view:not(:last-child) {
   margin-right: 8px;
 }
+
 
 
 .button-view {
@@ -1626,7 +1632,9 @@ body {
   border: 2px solid var(--color-seventh);
   border-radius: 4px;
   outline: none;
+  margin-bottom: 5px;
 }
+
 
 .button-view-current {
   border: 2px solid var(--color-first);
