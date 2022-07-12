@@ -458,12 +458,6 @@ body {
   list-style-type: none;
 }
 
-.advantages-item-container-canyon {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1200px;
-}
-
 .product-search {
   text-align: center;
   display: flex;
@@ -1229,7 +1223,6 @@ body {
   display: block;
   color: inherit;
   text-decoration: none;
-  outline: none;
 }
 
 .link-home-icon {
@@ -1681,11 +1674,6 @@ body {
 .product-card-image-link {
   display: flex;
   justify-content: center;
-
-}
-
-.product-card-image {
-  display: block;
 }
 
 .product-card-content {
