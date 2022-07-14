@@ -1603,13 +1603,12 @@ body {
 .button-wrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 224px;
+  max-width: 168px;
 }
 
 .button-view:not(:last-child) {
   margin-right: 8px;
 }
-
 
 
 .button-view {
@@ -1644,7 +1643,6 @@ body {
 .button-view:active {
   border: 2px solid var(--color-first);
 }
-
 
 .catalog-filter-link:last-child {
   margin-right: 0;
