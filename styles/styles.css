@@ -1734,6 +1734,7 @@ body {
 }
 
 .button-more {
+  font-family: "PT Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1745,6 +1746,7 @@ body {
 }
 
 .product-card-button-add {
+  font-family: "PT Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1800,6 +1802,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "PT Sans", sans-serif;
   background-color: var(--color-bg-fourth);
   color: var(--color-third);
   font-weight: 400;
